@@ -1,0 +1,43 @@
+<h1>This is room page</h1>
+<h1>Welcome to {{hotelName}}</h1>
+
+<!--<div [hidden]="hiderooms">
+  number of rooms:
+  <div [innerText]="numberofrooms"></div>
+</div>-->
+<!--{{rooms?.availableRooms?? "no rooms"}}-->
+<div *ngIf="rooms.availableRooms>0">
+  Rooms List
+<!--{{roomList}}-->
+  <table>
+    <tr>
+      <th>Index</th>
+      <th>Even/Odd</th>
+      <th>Room number</th>
+      <th>Room Type</th>
+      <th>Room Price</th>
+      <th>Room Amenities</th>
+      <th>Checkin Time</th>
+    </tr>
+    <tr [ngClass]="e ? 'even':'odd'" *ngFor="let room of roomList; let e = even; let o = odd; let i = index;">
+      <td>{{i}}</td>
+      <td>{{e ? "Even" : "Odd"}}</td>
+      <td>{{room.roomNumber}}</td>
+      <td>{{room.roomType}}</td>
+      <td>{{room.price}}</td>
+      <td>{{room.amenities}}</td>
+      <td>{{room.checkinTime}}</td>
+    </tr>
+  </table>
+
+
+</div>
+<div [ngSwitch] = "role">
+  <div *ngSwitchCase="'User'">
+    Welcome user
+  </div>
+  <div *ngSwitchCase="'Admin'">
+    Welcome Admin
+  </div>
+  <div *ngSwitchDefault>You are not authorised to this page</div>
+</div>

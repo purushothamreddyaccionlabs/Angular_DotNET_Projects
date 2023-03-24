@@ -1,0 +1,15 @@
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\bin\Debug\net6.0\Test12ForLoopEX.exe
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\bin\Debug\net6.0\Test12ForLoopEX.deps.json
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\bin\Debug\net6.0\Test12ForLoopEX.runtimeconfig.json
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\bin\Debug\net6.0\Test12ForLoopEX.dll
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\bin\Debug\net6.0\Test12ForLoopEX.pdb
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.csproj.AssemblyReference.cache
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.GeneratedMSBuildEditorConfig.editorconfig
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.AssemblyInfoInputs.cache
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.AssemblyInfo.cs
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.csproj.CoreCompileInputs.cache
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.dll
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\refint\Test12ForLoopEX.dll
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.pdb
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\Test12ForLoopEX.genruntimeconfig.cache
+D:\Csharp ass\Test12ForLoopEX\Test12ForLoopEX\obj\Debug\net6.0\ref\Test12ForLoopEX.dll

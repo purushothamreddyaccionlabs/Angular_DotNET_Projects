@@ -1,0 +1,15 @@
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.csproj.AssemblyReference.cache
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.AssemblyInfoInputs.cache
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.AssemblyInfo.cs
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.csproj.CoreCompileInputs.cache
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\bin\Debug\net6.0\nullCoalescingoperator.exe
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\bin\Debug\net6.0\nullCoalescingoperator.deps.json
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\bin\Debug\net6.0\nullCoalescingoperator.runtimeconfig.json
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\bin\Debug\net6.0\nullCoalescingoperator.dll
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\bin\Debug\net6.0\nullCoalescingoperator.pdb
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.dll
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\refint\nullCoalescingoperator.dll
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.pdb
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\nullCoalescingoperator.genruntimeconfig.cache
+D:\Csharp ass\nullCoalescingoperator\nullCoalescingoperator\obj\Debug\net6.0\ref\nullCoalescingoperator.dll

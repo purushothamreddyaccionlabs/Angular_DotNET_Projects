@@ -1,0 +1,15 @@
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\bin\Debug\net6.0\Test13OutParameter.exe
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\bin\Debug\net6.0\Test13OutParameter.deps.json
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\bin\Debug\net6.0\Test13OutParameter.runtimeconfig.json
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\bin\Debug\net6.0\Test13OutParameter.dll
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\bin\Debug\net6.0\Test13OutParameter.pdb
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.csproj.AssemblyReference.cache
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.AssemblyInfoInputs.cache
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.AssemblyInfo.cs
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.csproj.CoreCompileInputs.cache
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.dll
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\refint\Test13OutParameter.dll
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.pdb
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\Test13OutParameter.genruntimeconfig.cache
+D:\Csharp ass\Test13OutParameter\Test13OutParameter\obj\Debug\net6.0\ref\Test13OutParameter.dll

@@ -1,0 +1,15 @@
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\bin\Debug\net6.0\Ass1strProblem3.exe
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\bin\Debug\net6.0\Ass1strProblem3.deps.json
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\bin\Debug\net6.0\Ass1strProblem3.runtimeconfig.json
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\bin\Debug\net6.0\Ass1strProblem3.dll
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\bin\Debug\net6.0\Ass1strProblem3.pdb
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.csproj.AssemblyReference.cache
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.GeneratedMSBuildEditorConfig.editorconfig
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.AssemblyInfoInputs.cache
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.AssemblyInfo.cs
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.csproj.CoreCompileInputs.cache
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.dll
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\refint\Ass1strProblem3.dll
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.pdb
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\Ass1strProblem3.genruntimeconfig.cache
+D:\AssignmentsCSharp\Ass1strProblem3\Ass1strProblem3\obj\Debug\net6.0\ref\Ass1strProblem3.dll

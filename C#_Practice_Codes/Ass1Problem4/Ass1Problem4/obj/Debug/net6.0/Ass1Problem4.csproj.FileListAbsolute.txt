@@ -1,0 +1,15 @@
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\bin\Debug\net6.0\Ass1Problem4.exe
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\bin\Debug\net6.0\Ass1Problem4.deps.json
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\bin\Debug\net6.0\Ass1Problem4.runtimeconfig.json
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\bin\Debug\net6.0\Ass1Problem4.dll
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\bin\Debug\net6.0\Ass1Problem4.pdb
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.csproj.AssemblyReference.cache
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.GeneratedMSBuildEditorConfig.editorconfig
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.AssemblyInfoInputs.cache
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.AssemblyInfo.cs
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.csproj.CoreCompileInputs.cache
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.dll
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\refint\Ass1Problem4.dll
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.pdb
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\Ass1Problem4.genruntimeconfig.cache
+D:\AssignmentsCSharp\Ass1Problem4\Ass1Problem4\obj\Debug\net6.0\ref\Ass1Problem4.dll
