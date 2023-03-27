@@ -1,6 +1,7 @@
 ﻿using EshopApplication.DBContextLayer;
 using EshopApplication.Interfaces;
 using EshopApplication.Models;
+using Microsoft.AspNetCore.Mvc;
 using Models;
 
 namespace EshopApplication.ServiceLayer
@@ -18,9 +19,31 @@ namespace EshopApplication.ServiceLayer
         }
         public Users RegisterUser(Users userData)
         {
-            _db.Users.Add(userData);
-            _db.SaveChanges();
+            var user_email = userData.Email;
+            List<Users> listUsers = _db.Users.ToList();
+            Users matched_email = null;
+            foreach (Users item in listUsers)
+            {
+                if (item.Email == user_email)
+                {
+                    matched_email = item;
+                }
+            }
+            if(matched_email == null)
+            {
+                _db.Users.Add(userData);
+                _db.SaveChanges();
+
+            }
+            else
+            {
+                userData = null;
+            }
+
+
             return userData;
+
+
         }
 
         public Users UpdateProfile(Users userData)
@@ -44,9 +67,9 @@ namespace EshopApplication.ServiceLayer
             return userData;
         }
 
-        public Response ValidateUser(LoginUser userData)
+        public Users ValidateUser(LoginUser userData)
         {
-            Response response = new Response();
+           /* Response response = new Response();*/
             var User_input_Email = userData.Email;
             var User_input_Password = userData.Password;
             List<Users> listUsers = _db.Users.ToList();
@@ -58,17 +81,8 @@ namespace EshopApplication.ServiceLayer
                     existing_userdata = item;
                 }
             }
-            if(existing_userdata != null)
-            {
-                response.StatusCode = 200;
-                response.StatusMessage = "Valid user";
-            }
-            else
-            {
-                response.StatusCode = 400;
-                response.StatusMessage = "Invalid user";
-            }
-            return response;
+            return existing_userdata;
+        
         }
     }
 }

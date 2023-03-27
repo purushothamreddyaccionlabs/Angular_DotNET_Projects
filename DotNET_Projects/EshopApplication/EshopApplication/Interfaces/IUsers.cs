@@ -8,7 +8,7 @@ namespace EshopApplication.Interfaces
         List<Users> GetUsersList();
         Users RegisterUser(Users userData);
         Users UpdateProfile(Users userData);
-        Response ValidateUser(LoginUser userData);
+        Users ValidateUser(LoginUser userData);
 
     }
 }

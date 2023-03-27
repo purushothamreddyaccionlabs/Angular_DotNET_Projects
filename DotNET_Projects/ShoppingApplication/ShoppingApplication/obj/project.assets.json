@@ -3137,11 +3137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dot Net Projects\\ShoppingApplication\\ShoppingApplication\\ShoppingApplication.csproj",
+      "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\ShoppingApplication\\ShoppingApplication\\ShoppingApplication.csproj",
       "projectName": "ShoppingApplication",
-      "projectPath": "D:\\Dot Net Projects\\ShoppingApplication\\ShoppingApplication\\ShoppingApplication.csproj",
+      "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\ShoppingApplication\\ShoppingApplication\\ShoppingApplication.csproj",
       "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-      "outputPath": "D:\\Dot Net Projects\\ShoppingApplication\\ShoppingApplication\\obj\\",
+      "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\ShoppingApplication\\ShoppingApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",

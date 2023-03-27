@@ -26,8 +26,16 @@ namespace EshopApplication.Controllers
         [Route("Register")]
         public IActionResult RegisterUser(Users userData)
         {
-            _Iusers.RegisterUser(userData);
-            return Created("/" + userData.Id,userData);
+            var registerData = _Iusers.RegisterUser(userData);
+            if(registerData != null)
+            {
+                return Created("/" + userData.Id, userData);
+            }
+            else
+            {
+                return BadRequest();
+            }
+            
         }
 
         [HttpPut]
@@ -45,7 +53,7 @@ namespace EshopApplication.Controllers
             var finalResponse = _Iusers.ValidateUser(data);
             if(finalResponse != null)
             {
-                return Ok(finalResponse.StatusMessage);
+                return Ok(finalResponse);
             }
             else
             {

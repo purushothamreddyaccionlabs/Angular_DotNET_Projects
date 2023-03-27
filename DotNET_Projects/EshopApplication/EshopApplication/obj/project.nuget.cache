@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3y1LqRCb6LEHLUSDJbFIauveg+GB7Rr2YTKlQcAaNDRtI5cT/Thlag2r/JGXIZ483ANDDy0afXZ7ITPCvFPvVA==",
+  "dgSpecHash": "EEyAQc59DpN8u4K9GZh/2zpCuN9nharLrXqKCJvUFIW5ZzQwKhFqBmrELRdP30Kf60B6trm01cNXqgfS0KzRtg==",
   "success": true,
-  "projectFilePath": "D:\\Dot Net Projects\\EshopApplication\\EshopApplication\\EshopApplication.csproj",
+  "projectFilePath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\EshopApplication\\EshopApplication\\EshopApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AL5402\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\AL5402\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

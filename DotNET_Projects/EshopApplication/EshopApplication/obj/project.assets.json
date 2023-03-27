@@ -3137,11 +3137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dot Net Projects\\EshopApplication\\EshopApplication\\EshopApplication.csproj",
+      "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\EshopApplication\\EshopApplication\\EshopApplication.csproj",
       "projectName": "EshopApplication",
-      "projectPath": "D:\\Dot Net Projects\\EshopApplication\\EshopApplication\\EshopApplication.csproj",
+      "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\EshopApplication\\EshopApplication\\EshopApplication.csproj",
       "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-      "outputPath": "D:\\Dot Net Projects\\EshopApplication\\EshopApplication\\obj\\",
+      "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\EshopApplication\\EshopApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",
