@@ -1,6 +1,6 @@
 .bg-reg-container{
     background-image: url("../../../assets/Images/registrationpage-image.jpg");
-    height: 100vh;
+    height: 120vh;
     background-size: cover;
 }
 .form-container{
@@ -11,7 +11,7 @@
 }
 .reg-form-container{
     background-color: rgb(198, 229, 243);
-    margin-top: 15px;
+    margin-top: 25px;
     height:100%;
     width:65%;
     border-radius: 9px;
@@ -55,4 +55,14 @@ label{
     background-color: cyan;
     color:black;
     font-weight:bold;
+}
+.err-msg{
+    color:red;
+    border-color: red;
+}
+input.ng-touched.ng-valid{
+    border:2px solid rgb(138, 229, 138);
+}
+input.ng-touched.ng-invalid{
+    border:1px solid red;
 }

@@ -58,3 +58,11 @@
 input.ng-touched.ng-valid{
     border:2px solid rgb(138, 229, 138);
 }
+.invalidform{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+input.ng-touched.ng-invalid{
+    border:1px solid red;
+}

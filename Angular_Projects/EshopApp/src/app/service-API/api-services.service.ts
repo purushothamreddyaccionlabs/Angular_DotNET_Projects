@@ -15,9 +15,15 @@ export class ApiServicesService {
  
   url = "https://localhost:7103";
 
+
    //Validating the user
    validateUser(data:any){
     return this.http.post(this.url + "/api/Users/ValidateUser",data);
+  }
+
+  //Register users data
+  registerdata(data:any){
+    return this.http.post(this.url+ "/api/Users/Register",data);
   }
 
   isLoggedIn(){
@@ -33,7 +39,6 @@ login(data:any){
    this.validateUser(data).subscribe((res) => { 
     sessionStorage.setItem('token', JSON.stringify(res));
     this.router.navigate(['/user']);
-    // console.log(responseData);
   })
   }
 
@@ -41,12 +46,5 @@ login(data:any){
     sessionStorage.removeItem('token');
     this.router.navigate(['/login']);
   }
-
-
-
-
-
-
-
 
 }

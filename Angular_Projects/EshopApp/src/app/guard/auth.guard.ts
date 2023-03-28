@@ -17,13 +17,13 @@ export class AuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): boolean {
-      if(this.apiservice.isLoggedIn()){
-        this.router.navigate(['/user']);
-        return true;
-      }else{
-        this.router.navigate(['/login']);
+      if(!this.apiservice.isLoggedIn){
+        this.router.navigate(['login']);
         return false;
+     
       }
+        return this.apiservice.isLoggedIn();
+      
 
   
   }
