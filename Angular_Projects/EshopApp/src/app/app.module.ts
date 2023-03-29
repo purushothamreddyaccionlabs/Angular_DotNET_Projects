@@ -14,7 +14,7 @@ import { NotFoundComponent } from './log-components/not-found/not-found.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -36,6 +36,7 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    CarouselModule,
     ToastrModule.forRoot()
   ],
   providers: [],

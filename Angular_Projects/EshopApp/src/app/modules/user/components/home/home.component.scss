@@ -1,0 +1,37 @@
+.Fashion-img{
+    height: 60px;
+    width:60px;
+}
+.nav-headings{
+    font-size: medium;
+    font-weight: bold;
+}
+.cards{
+    height: 130px;
+    width:140px;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+}
+.categoryList-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.cards:hover{
+    height: 140px;
+    width:150px;
+    background-image: linear-gradient(to right, red , yellow);
+    color:aliceblue;
+}
+.home-continer{
+    // background-image: linear-gradient(to bottom right, red, yellow);
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    height: auto;
+}
+.home-carousels{
+    height: 30vh;
+}
