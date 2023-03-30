@@ -1,0 +1,29 @@
+.cart-product {
+    width: 100%;
+
+}
+
+.bg-container {
+    height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding:15px;
+}
+.cart-items{
+    background-color:#ffff;
+    width:100%;
+    padding:10px;
+}
+.main-text{
+    font-size:large;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.main-headings{
+    display: flex;
+    justify-content: space-between;
+}
+.main-price-headings{
+    padding-right:20px;
+    font-size: large;
+    font-weight: bold;
+}

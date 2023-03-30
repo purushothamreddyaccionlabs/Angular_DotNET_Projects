@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dot Net Projects\\EmployeeManagement\\BusinessLayer\\BusinessLayer.csproj": {}
+    "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "D:\\Dot Net Projects\\EmployeeManagement\\BusinessLayer\\BusinessLayer.csproj": {
+    "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dot Net Projects\\EmployeeManagement\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\Dot Net Projects\\EmployeeManagement\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-        "outputPath": "D:\\Dot Net Projects\\EmployeeManagement\\BusinessLayer\\obj\\",
+        "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Dot Net Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj": {
-                "projectPath": "D:\\Dot Net Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj"
+              "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\EmployeeManagement\\EmployeeManagement.csproj": {
+                "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\EmployeeManagement\\EmployeeManagement.csproj"
               },
-              "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj": {
-                "projectPath": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj"
+              "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj": {
+                "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "D:\\Dot Net Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj": {
+    "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\EmployeeManagement\\EmployeeManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dot Net Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\EmployeeManagement\\EmployeeManagement.csproj",
         "projectName": "EmployeeManagement",
-        "projectPath": "D:\\Dot Net Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\EmployeeManagement\\EmployeeManagement.csproj",
         "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-        "outputPath": "D:\\Dot Net Projects\\EmployeeManagement\\EmployeeManagement\\obj\\",
+        "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\EmployeeManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj": {
-                "projectPath": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj"
+              "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj": {
+                "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj": {
+    "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj",
+        "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj",
+        "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj",
         "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-        "outputPath": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\obj\\",
+        "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",

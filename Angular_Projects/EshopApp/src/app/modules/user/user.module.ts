@@ -14,6 +14,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { DialogboxComponent } from './components/dialogbox/dialogbox.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CartComponent } from './components/cart/cart.component';
+
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { NgImageSliderModule } from 'ng-image-slider';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    DialogboxComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +40,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatListModule,
     MatMenuModule,
     MatButtonModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    MatDialogModule
   ]
 })
 export class UserModule { }

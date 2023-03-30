@@ -26,6 +26,22 @@ export class ApiServicesService {
     return this.http.post(this.url+ "/api/Users/Register",data);
   }
 
+  //List of Products
+  allProductsList(){
+    return this.http.get(this.url + "/api/Products/GetProducts");
+  }
+
+  //List of products based on categoryId
+  productsListbyCategoryId(i:any){
+    return this.http.get(this.url + "/api/Products/GetProductsByCategoryId"+i);
+  }
+
+  //Add products to cart
+  addProductsToCart(data:any){
+    return this.http.post(this.url + "/api/Cart/AddToCart",data);
+  }
+
+
   isLoggedIn(){
     var sessionData = sessionStorage.getItem('token');
     if(sessionData !==null){
@@ -35,6 +51,7 @@ export class ApiServicesService {
     }
   }
 
+  //Checking user details valid or not
 login(data:any){
    this.validateUser(data).subscribe((res) => { 
     sessionStorage.setItem('token', JSON.stringify(res));
@@ -42,6 +59,7 @@ login(data:any){
   })
   }
 
+  //For logout user
   logout(){
     sessionStorage.removeItem('token');
     this.router.navigate(['/login']);

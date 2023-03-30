@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj",
+      "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\Models.csproj",
+      "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\Models.csproj",
       "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-      "outputPath": "D:\\Dot Net Projects\\EmployeeManagement\\ServiceLayer1\\obj\\",
+      "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Employee_Leave_Mgt\\ServiceLayer1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",

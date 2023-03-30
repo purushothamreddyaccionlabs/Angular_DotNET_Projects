@@ -23,5 +23,20 @@ namespace EshopApplication.ServiceLayer
         {
             return _Db.Products.ToList();
         }
+
+        public List<Products> GetProductsByCategory(int categoryId)
+        {
+            List<Products> products = _Db.Products.ToList();
+            List<Products> specificCategorylist = new List<Products>();
+            foreach(Products item in products)
+            {
+                if(item.CategoryId == categoryId)
+                {
+                    specificCategorylist.Add(item);
+                }
+            }
+
+            return specificCategorylist;
+        }
     }
 }
