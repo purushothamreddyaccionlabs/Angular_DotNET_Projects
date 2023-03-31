@@ -46,26 +46,12 @@ stages:
 - stage: build
   displayName: build application
   jobs:
-    - template: build.yaml
-      parameters:
-        versionsdk: $(versionsdk)
-        ArtifactName: ${{parameters.Artifactname}}
-        projectssln: $(projectssln)
-        build: $(build)
-        Publish: $(publish)
-        Restore: $(restore)
-
-- stage: DeployToDev
-  displayName: Deploying to dev 
-  dependsOn: build
-  condition: and(succeeded(), or(
-        and(eq(variables['isDev'], 'true'), ne(variables['isQA'], 'true'), ne(variables['isPROD'], 'true')),
-        eq(variables['environments'], 'master')
-      ))
-  jobs: 
-  - template: Dev-deploy-template.yaml
-    parameters:
-      ArtifactName: ${{parameters.Artifactname}}
-      AzureSubscription: $(AzureSubscription)
-      WebAppName: $(WebAppName)
-      
+   - job:
+     steps:
+        - task: PowerShell@2
+          inputs:
+            targetType: 'inline'
+            script: |
+            # Write your PowerShell commands here.
+            
+            Write-Host "Hello World"  
