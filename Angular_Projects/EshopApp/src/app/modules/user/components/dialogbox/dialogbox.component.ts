@@ -45,6 +45,7 @@ userdata:any;
         userId:this.userdata.id,
         product:this.productInfo.productName,
         productId:this.productInfo.id,
+        imageURL:this.productInfo.imageURL,
         unitPrice:this.productInfo.unitPrice,
         discount:this.productInfo.discount,
         quantity:this.cartSize,

@@ -36,5 +36,13 @@ namespace EshopApplication.Controllers
             var productList = _IProducts.GetProductsByCategory(id);
             return Ok(productList);
         }
+
+        [HttpGet]
+        [Route("GetProductById{id}")]
+        public IActionResult GetProductById(int id)
+        {
+            var result = _IProducts.GetProductById(id);
+            return Ok(result);
+        }
     }
 }

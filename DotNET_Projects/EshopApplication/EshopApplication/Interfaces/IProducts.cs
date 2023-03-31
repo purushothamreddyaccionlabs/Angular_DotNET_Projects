@@ -9,5 +9,7 @@ namespace EshopApplication.Interfaces
         Products AddProducts(Products products);
 
         List<Products> GetProductsByCategory(int categoryId);
+
+        Products GetProductById(int id);
     }
 }

@@ -41,6 +41,15 @@ export class ApiServicesService {
     return this.http.post(this.url + "/api/Cart/AddToCart",data);
   }
 
+  //Get cart items by userId
+  getCartItemsbyuserId(num:any){
+    return this.http.get(this.url + "/api/Cart/GetProductsBy" + num);
+  }
+
+  //get product by productid
+  getProductbyProductID(num:any){
+    return this.http.get(this.url + "/api/Products/GetProductById"+num);
+  }
 
   isLoggedIn(){
     var sessionData = sessionStorage.getItem('token');

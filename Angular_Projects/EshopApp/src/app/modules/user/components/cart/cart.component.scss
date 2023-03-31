@@ -1,6 +1,5 @@
 .cart-product {
     width: 100%;
-
 }
 
 .bg-container {
@@ -26,4 +25,15 @@
     padding-right:20px;
     font-size: large;
     font-weight: bold;
+}
+.cart-images{
+    height:100px;
+    width:100px;
+    padding: 10px;
+}
+.card-data{
+    display: flex;
+}
+.card-details{
+    margin-left: 20px;
 }

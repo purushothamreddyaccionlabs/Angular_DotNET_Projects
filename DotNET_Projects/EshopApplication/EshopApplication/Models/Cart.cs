@@ -14,6 +14,7 @@ namespace Models
         public int UserId { get; set; }
         public string Product { get; set; }
         public int ProductId { get; set; }
+        public string imageURL { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal Discount { get; set; }
         public int Quantity { get; set; }

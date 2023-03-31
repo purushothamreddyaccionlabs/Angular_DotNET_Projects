@@ -19,6 +19,11 @@ namespace EshopApplication.ServiceLayer
             return products;
         }
 
+        public Products GetProductById(int id)
+        {
+            return _Db.Products.Find(id);
+        }
+
         public List<Products> GetProducts()
         {
             return _Db.Products.ToList();

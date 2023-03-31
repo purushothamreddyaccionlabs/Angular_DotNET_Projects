@@ -6,12 +6,23 @@
                     <h1 class="main-text">Shopping cart</h1>
                     <h1 class="main-price-headings">Price</h1>
                 </div>
-                <hr/>
-                <div class="cart-product">
-                    
+                <hr />
+                <div class="cart-product" *ngFor="let product of allCartItems">
+                    <div class="card-data">
+
+                        <img class="cart-images" [src]="product.imageURL" />
+                        <div class="card-details">
+                            <h1>{{product.product}}</h1>
+                            <p>In stock</p>
+                            <p>Eligible for Free Delivery</p>
+                            <p>Quantity: {{product.Quantity}}</p>
+                        </div>
+
+                    </div>
+                    <hr />
                 </div>
             </div>
         </div>
     </div>
-    
+
 </div>
