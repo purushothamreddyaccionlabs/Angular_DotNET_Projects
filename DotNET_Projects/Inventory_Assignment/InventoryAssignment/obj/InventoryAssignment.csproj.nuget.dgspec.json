@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AssignmentsCSharp\\InventoryAssignment\\InventoryAssignment\\InventoryAssignment.csproj": {}
+    "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\InventoryAssignment\\InventoryAssignment.csproj": {}
   },
   "projects": {
-    "D:\\AssignmentsCSharp\\InventoryAssignment\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AssignmentsCSharp\\InventoryAssignment\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "D:\\AssignmentsCSharp\\InventoryAssignment\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-        "outputPath": "D:\\AssignmentsCSharp\\InventoryAssignment\\ClassLibrary1\\obj\\",
+        "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\AssignmentsCSharp\\InventoryAssignment\\InventoryAssignment\\InventoryAssignment.csproj": {
+    "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\InventoryAssignment\\InventoryAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AssignmentsCSharp\\InventoryAssignment\\InventoryAssignment\\InventoryAssignment.csproj",
+        "projectUniqueName": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\InventoryAssignment\\InventoryAssignment.csproj",
         "projectName": "InventoryAssignment",
-        "projectPath": "D:\\AssignmentsCSharp\\InventoryAssignment\\InventoryAssignment\\InventoryAssignment.csproj",
+        "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\InventoryAssignment\\InventoryAssignment.csproj",
         "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-        "outputPath": "D:\\AssignmentsCSharp\\InventoryAssignment\\InventoryAssignment\\obj\\",
+        "outputPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\InventoryAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\AssignmentsCSharp\\InventoryAssignment\\ClassLibrary1\\ClassLibrary1.csproj": {
-                "projectPath": "D:\\AssignmentsCSharp\\InventoryAssignment\\ClassLibrary1\\ClassLibrary1.csproj"
+              "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\ClassLibrary1\\ClassLibrary1.csproj": {
+                "projectPath": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\Inventory_Assignment\\ClassLibrary1\\ClassLibrary1.csproj"
               }
             }
           }

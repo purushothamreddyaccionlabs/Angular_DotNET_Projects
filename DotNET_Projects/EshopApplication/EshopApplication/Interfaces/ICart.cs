@@ -9,5 +9,11 @@ namespace EshopApplication.Interfaces
         Cart addItemsToCart(Cart cart_data);
 
         List<Cart> getCartProductsByUserId(int userId);
+
+        void DeleteProduct(Cart id);
+
+        Cart GetCartItem(int id);
+
+
     }
 }

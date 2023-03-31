@@ -1,4 +1,4 @@
-<div class="bg-container pt-5 pb-5 mt-5">
+<div class="bg-container pt-5 pb-5 mt-5 ">
     <div class="container-fluid ">
         <div class="row">
             <div class="col-8 cart-items">
@@ -8,20 +8,26 @@
                 </div>
                 <hr />
                 <div class="cart-product" *ngFor="let product of allCartItems">
-                    <div class="card-data">
-
-                        <img class="cart-images" [src]="product.imageURL" />
-                        <div class="card-details">
-                            <h1>{{product.product}}</h1>
-                            <p>In stock</p>
-                            <p>Eligible for Free Delivery</p>
-                            <p>Quantity: {{product.Quantity}}</p>
+                    <div class=" row ">
+                        <div class="col-2">
+                            <img class="cart-images" [src]="product.imageURL" />
                         </div>
-
+                        
+                        <div class="col-3">
+                            <h1>{{product.product}}</h1>
+                            <p style="color:aquamarine">In stock</p>
+                            <p>Eligible for Free Delivery</p>
+                            <span>Size: {{product.quantity}}</span>
+                            <button class="delete-btn" (click)="delterItem(product.id)">Delete</button>
+                        </div>
+                        <div class="col-7">
+                            <h1 class="text"><i class="fa-sharp fa-solid fa-indian-rupee-sign"> {{product.totalPrice}}</i></h1>
+                        </div>
                     </div>
                     <hr />
                 </div>
             </div>
+        
         </div>
     </div>
 

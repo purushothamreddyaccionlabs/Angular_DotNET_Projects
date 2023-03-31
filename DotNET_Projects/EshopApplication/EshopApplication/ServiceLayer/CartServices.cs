@@ -20,6 +20,19 @@ namespace EshopApplication.ServiceLayer
             return (cart_data);
         }
 
+        public void DeleteProduct(Cart Id)
+        {
+            Db.Cart.Remove(Id);
+            Db.SaveChanges();
+   
+        }
+
+        public Cart GetCartItem(int id)
+        {
+            var cartdata = Db.Cart.Find(id);
+            return cartdata;
+        }
+
         public List<Cart> getCartProductsByUserId(int userId)
         {
             List<Cart> TotalList = Db.Cart.ToList();

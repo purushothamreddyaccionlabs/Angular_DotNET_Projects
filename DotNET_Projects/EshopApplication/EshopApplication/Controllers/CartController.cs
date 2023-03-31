@@ -37,5 +37,18 @@ namespace EshopApplication.Controllers
             var itemsList = _ICart.getCartProductsByUserId(userId);
             return Ok(itemsList);
         }
+
+        [HttpDelete]
+        [Route("DeleteProductbyCartId{id}")]
+        public IActionResult Delete(int id)
+        {
+            var cartdata = _ICart.GetCartItem(id);
+            if(cartdata != null)
+            {
+                _ICart.DeleteProduct(cartdata);
+                return Ok();
+            }
+            return NotFound($"Not found with {id}");
+        }
     }
 }

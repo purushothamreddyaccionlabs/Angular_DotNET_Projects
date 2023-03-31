@@ -3,7 +3,7 @@
 }
 
 .bg-container {
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     padding:15px;
 }
@@ -31,9 +31,13 @@
     width:100px;
     padding: 10px;
 }
-.card-data{
-    display: flex;
+
+.text{
+    text-align: end;
+    padding-right:10px;
 }
-.card-details{
-    margin-left: 20px;
+.delete-btn{
+    width:30%;
+    margin-left: 30px;
+    border-radius: 8px;
 }

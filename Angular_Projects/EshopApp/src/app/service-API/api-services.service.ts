@@ -51,6 +51,11 @@ export class ApiServicesService {
     return this.http.get(this.url + "/api/Products/GetProductById"+num);
   }
 
+  //Delete products in cart table
+  DeletecartItem(num:any){
+    return this.http.delete(this.url + "/api/Cart/DeleteProductbyCartId" + num);
+  }
+
   isLoggedIn(){
     var sessionData = sessionStorage.getItem('token');
     if(sessionData !==null){

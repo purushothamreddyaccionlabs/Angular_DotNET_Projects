@@ -9,6 +9,7 @@ namespace Models
 {
     public class Categories
     {
+        [Key]
         public int Id { get; set; }
         public string CategoryName { get; set; }
     }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { ApiServicesService } from 'src/app/service-API/api-services.service';
 
 @Component({
@@ -9,7 +10,8 @@ import { ApiServicesService } from 'src/app/service-API/api-services.service';
 export class CartComponent implements OnInit{
 
   constructor(
-    private apiservice:ApiServicesService
+    private apiservice:ApiServicesService,
+    private toastr:ToastrService
   ){}
 
   allCartItems:any;
@@ -27,6 +29,13 @@ export class CartComponent implements OnInit{
     this.apiservice.getCartItemsbyuserId(id).subscribe((response)=>{
       console.log(response);
       this.allCartItems = response;
+    })
+  }
+  
+  delterItem(id:any){
+    this.apiservice.DeletecartItem(id).subscribe((res)=>{
+      this.GetListofItems();
+      this.toastr.success("Item Deleted");
     })
   }
 }
