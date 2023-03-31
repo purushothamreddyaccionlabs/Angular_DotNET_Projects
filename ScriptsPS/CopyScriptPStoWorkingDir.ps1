@@ -1,4 +1,4 @@
-# Set the source and destination foldersss
+# Set the source and destination fold
 $sourceFolder = "D:\a\1\s\Angular_DotNET_Projects\ScriptsPS"
 $destinationFolder = "D:\a\1\s"
 
