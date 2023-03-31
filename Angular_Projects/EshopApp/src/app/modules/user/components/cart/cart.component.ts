@@ -37,15 +37,21 @@ export class CartComponent implements OnInit{
     })
   }
 
-  delterItem(id:any){
-    this.apiservice.DeletecartItem(id).subscribe((res)=>{
-      this.GetListofItems();
-      this.getTotalpriceandlen();
+  deleteItem(product:any){
+    this.apiservice.DeletecartItem(product.id).subscribe((res)=>{
       this.toastr.success("Item Deleted");
+      this.GetListofItems();
+      this.totalPrice - product.totalPrice;
+      
     })
   }
   
   getTotalpriceandlen(){
+    var id = parseInt(this.userdata.id);
+    this.apiservice.getCartItemsbyuserId(id).subscribe((response)=>{
+      this.allCartItems = response;
+    })
+    this.totalPrice = 0;
     this.totalItems = this.allCartItems.length;
     for (let index = 0; index <= this.allCartItems.length; index++) {
         const element = this.allCartItems[index];

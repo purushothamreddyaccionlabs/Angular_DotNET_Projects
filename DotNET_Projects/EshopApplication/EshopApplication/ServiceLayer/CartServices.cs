@@ -51,7 +51,5 @@ namespace EshopApplication.ServiceLayer
         {
             return Db.Cart.ToList();
         }
-
-        
     }
 }

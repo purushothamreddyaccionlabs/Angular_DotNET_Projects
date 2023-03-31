@@ -58,7 +58,7 @@
 .cart-total-card{
     background-color:#ffff;
     margin-left: 10px;
-    padding:10px;
+    padding:30px;
 }
 
 .cart-item{
@@ -67,4 +67,16 @@
 .title{
     text-align: center;
     font-weight: bold;
+}
+.all-products{
+    overflow-y:auto;
+    max-height: 400px;
+    overflow-x: hidden;
+}
+.buynowbtn{
+    width:100%;
+    padding:4px;
+    border-radius: 10px;
+    border-width: 0px;
+    background: #f4e603;
 }

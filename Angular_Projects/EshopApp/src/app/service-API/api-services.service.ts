@@ -56,6 +56,7 @@ export class ApiServicesService {
     return this.http.delete(this.url + "/api/Cart/DeleteProductbyCartId" + num);
   }
 
+
   isLoggedIn(){
     var sessionData = sessionStorage.getItem('token');
     if(sessionData !==null){
