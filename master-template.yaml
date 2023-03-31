@@ -1,32 +1,3 @@
-parameters:
-    - name: environment
-      type: string
-      default: master
-      values:
-          - master
-          - qa
-          - prod
-    - name: reference
-      default: refs/heads/master
-      type: string
-      values:
-          - refs/heads/master
-          - refs/heads/qa
-          - refs/heads/prod
-    - name: Artifactname
-      type: string
-      default: Dev-Artifact
-      values:
-        - Dev-Artifact
-        - Qa-Artifact
-        - Prod-Artifact
-
-variables:
- - name: environments
-   value: ${{parameters.environment}}
- - name: isDev
-   value: $[eq(variables['Build.SourceBranch'], 'master')]
-
 resources:
   repositories:
   - repository: Angular_DotNET_Projects # The name used to reference this repository in the checkout step
@@ -35,9 +6,10 @@ resources:
     name: purushothamreddyaccionlabs/Angular_DotNET_Projects
     ref: refs/heads/master
     trigger:
-    - master
+     branches:
+         include:
+             - master
 
-trigger: none
 
 pool:
   vmImage: 'windows-latest'
