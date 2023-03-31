@@ -7,28 +7,41 @@
                     <h1 class="main-price-headings">Price</h1>
                 </div>
                 <hr />
-                <div class="cart-product" *ngFor="let product of allCartItems">
-                    <div class=" row ">
-                        <div class="col-2">
+               
+                <div class="row" *ngFor="let product of allCartItems">
+                    <div class="cart-product">
+                        <div class=" col-4 image-card">
                             <img class="cart-images" [src]="product.imageURL" />
                         </div>
-                        
-                        <div class="col-3">
+
+                        <div class="col-4 productinfo-card">
                             <h1>{{product.product}}</h1>
-                            <p style="color:aquamarine">In stock</p>
+                            <p style="color:#007600">In stock</p>
                             <p>Eligible for Free Delivery</p>
                             <span>Size: {{product.quantity}}</span>
                             <button class="delete-btn" (click)="delterItem(product.id)">Delete</button>
                         </div>
-                        <div class="col-7">
-                            <h1 class="text"><i class="fa-sharp fa-solid fa-indian-rupee-sign"> {{product.totalPrice}}</i></h1>
+                        <div class="col-4 price-card">
+                            <h1 class="text"><i class="fa-sharp fa-solid fa-indian-rupee-sign">
+                                    {{product.totalPrice}}</i></h1>
                         </div>
                     </div>
-                    <hr />
-                </div>
-            </div>
-        
-        </div>
-    </div>
+                    <hr/>
 
+                </div>
+
+
+            </div>
+            <div class="col-4 ">
+                <div class="cart-total-card">
+                    <h1 class="title">CART ITEMS</h1>
+                    <p class="cart-item">Your order eligible for FREE Delivery.</p>
+                    <h1 >SubTotal({{totalItems}} Items): <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i> {{totalPrice}}</h1>
+                    <button>Proceed to Buy</button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
 </div>
