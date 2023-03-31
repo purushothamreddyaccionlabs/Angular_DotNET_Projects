@@ -1,0 +1,71 @@
+parameters:
+    - name: environment
+      type: string
+      default: master
+      values:
+          - master
+          - qa
+          - prod
+    - name: reference
+      default: refs/heads/master
+      type: string
+      values:
+          - refs/heads/master
+          - refs/heads/qa
+          - refs/heads/prod
+    - name: Artifactname
+      type: string
+      default: Dev-Artifact
+      values:
+        - Dev-Artifact
+        - Qa-Artifact
+        - Prod-Artifact
+
+variables:
+ - name: environments
+   value: ${{parameters.environment}}
+ - name: isDev
+   value: $[eq(variables['Build.SourceBranch'], 'master')]
+
+resources:
+  repositories:
+  - repository: Angular_DotNET_Projects # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: github.com_purushothamreddyaccionlabs
+    name: purushothamreddyaccionlabs/Angular_DotNET_Projects
+    ref: refs/heads/master
+    trigger:
+    - master
+
+trigger: none
+
+pool:
+  vmImage: 'windows-latest'
+
+stages:
+- stage: build
+  displayName: build application
+  jobs:
+    - template: build.yaml
+      parameters:
+        versionsdk: $(versionsdk)
+        ArtifactName: ${{parameters.Artifactname}}
+        projectssln: $(projectssln)
+        build: $(build)
+        Publish: $(publish)
+        Restore: $(restore)
+
+- stage: DeployToDev
+  displayName: Deploying to dev 
+  dependsOn: build
+  condition: and(succeeded(), or(
+        and(eq(variables['isDev'], 'true'), ne(variables['isQA'], 'true'), ne(variables['isPROD'], 'true')),
+        eq(variables['environments'], 'master')
+      ))
+  jobs: 
+  - template: Dev-deploy-template.yaml
+    parameters:
+      ArtifactName: ${{parameters.Artifactname}}
+      AzureSubscription: $(AzureSubscription)
+      WebAppName: $(WebAppName)
+      
