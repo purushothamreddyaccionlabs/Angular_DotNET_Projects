@@ -13,13 +13,24 @@ builder.Services.AddDbContext<EshopDB>(options => options.UseSqlServer(builder.C
 
 builder.Services.AddScoped<IUsers, UsersServices>();
 builder.Services.AddScoped<ICategories, CategoriesServices>();
-builder.Services.AddScoped<IProducts,ProductServices>();
+builder.Services.AddScoped<IProducts, ProductServices>();
 builder.Services.AddScoped<ICart, CartServices>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy(name: "CorsPolicy", builder =>
+    {
+        builder.WithOrigins("https://dev-angular-app.azurewebsites.net")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+    });
+});
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
@@ -35,14 +46,6 @@ if (!app.Environment.IsDevelopment())
         options.RoutePrefix = string.Empty;
     });
 }
-
-app.UseCors(x => x
-            .WithOrigins("https://dev-angular-app.azurewebsites.net")
-            .AllowCredentials();
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            );
 
 app.UseHttpsRedirection();
 
