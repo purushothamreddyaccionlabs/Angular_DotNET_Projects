@@ -36,15 +36,22 @@ if (!app.Environment.IsDevelopment())
     });
 }
 
-app.UseCors(x => x
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            );
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp",
+        builder =>
+        {
+            builder.WithOrigins("https://dev-angular-app.azurewebsites.net") // replace with your Angular app's domain
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors("AllowAngularApp");
 
 app.MapControllers();
 
