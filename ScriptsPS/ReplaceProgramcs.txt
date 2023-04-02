@@ -36,16 +36,13 @@ if (!app.Environment.IsDevelopment())
     });
 }
 
-services.AddCors(options =>
-{
-    options.AddPolicy("CorsPolicy", builder =>
-    {
-        builder.AllowAnyHeader()
-               .AllowAnyMethod()
-               .WithOrigins("https://dev-angular-app.azurewebsites.net")
-               .AllowCredentials();
-    });
-});
+app.UseCors(x => x
+            .WithOrigins("https://dev-angular-app.azurewebsites.net")
+            .AllowCredentials();
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            );
 
 app.UseHttpsRedirection();
 
