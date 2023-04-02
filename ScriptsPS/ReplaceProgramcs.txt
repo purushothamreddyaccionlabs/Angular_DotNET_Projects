@@ -42,6 +42,7 @@ builder.Services.AddCors(options =>
         builder =>
         {
             builder.WithOrigins("https://dev-angular-app.azurewebsites.net") // replace with your Angular app's domain
+                   .AllowAnyOrigin()
                    .AllowAnyHeader()
                    .AllowAnyMethod();
         });
