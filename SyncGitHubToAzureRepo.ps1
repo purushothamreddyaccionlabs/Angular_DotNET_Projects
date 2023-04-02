@@ -11,13 +11,13 @@ Remove-Item -Recurse -Force .git
 cd ..
 
 # Clone the repository again, this time with Azure credentials
-$GIT_CMD_REPOSITORY="https://$AZUREPAT@dev.azure.com/Learning-Devops-7777/Abdul/_git/syncWithgitEshopCommerce"
+$GIT_CMD_REPOSITORY="https://$AZUREPAT@dev.azure.com/Learning-Devops-7777/Abdul/_git/syncgitEshopCommerce"
 git clone $GIT_CMD_REPOSITORY
 
 # Copy the contents of the local repository to the cloned Azure repository
-Copy-Item -Recurse Angular_DotNET_Projects/* syncWithgitEshopCommerce/
+Copy-Item -Recurse Angular_DotNET_Projects/* syncgitEshopCommerce/
 
-cd syncWithgitEshopCommerce
+cd syncgitEshopCommerce
 
 # Configure Git with Azure credentials
 git config --global user.email "$AZUSER_EMAIL"
