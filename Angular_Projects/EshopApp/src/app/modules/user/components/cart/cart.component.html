@@ -8,6 +8,9 @@
                 </div>
                 <hr />
                 <div class="all-products">
+                    <div *ngIf="totalPrice==0" class="cart-empty">
+                        <img class="empty-cart-img" src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg"/>
+                        <h1 class="cart-empty1">Your Cart is empty</h1></div>
                     <div class="row " *ngFor="let product of allCartItems">
                         <div class="cart-product">
                             <div class=" col-4 image-card">
@@ -15,6 +18,7 @@
                             </div>
 
                             <div class="col-4 productinfo-card">
+                                
                                 <h1>{{product.product}}</h1>
                                 <span > <i class="fa fa-star star-icon"></i> <i class="fa fa-star star-icon"></i>
                                     <i class="fa fa-star star-icon"></i> <i class="fa fa-star star-icon"></i>

@@ -1,0 +1,59 @@
+*{
+    box-sizing: content-box;
+}
+.buy-dialog-box{
+    background-color: #ffff;
+    padding:20px;
+}
+.logo{
+    height: 70px;
+    width:70px;
+}
+
+.payment-heading{
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+.user-address{
+    border-style: solid;
+    border-width: 1px;
+    padding:20px;
+}
+.payment-options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.list-options{
+    list-style-type:none;
+}
+.label{
+    margin-left: 10px;
+}
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:10px;
+}
+.payment-option{
+    border-style: solid;
+    padding:10px;
+    border-width: 1px;
+    justify-self: flex-start;
+}
+.place-order{
+    text-align: end;
+    padding:10px;
+}
+.place-order-btn{
+    width:40%;
+    padding:3px;
+    border-width: 1px;
+    background-color: #ff3f6c;
+    color:#fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    line-height: 48px;
+}

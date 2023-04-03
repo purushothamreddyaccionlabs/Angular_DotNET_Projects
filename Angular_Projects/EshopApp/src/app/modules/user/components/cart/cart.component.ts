@@ -23,6 +23,8 @@ export class CartComponent implements OnInit{
   totalPrice = 0;
   totalItems = 0;
   showbtn:boolean = false;
+
+  
  
 
   ngOnInit(): void {
@@ -66,9 +68,10 @@ export class CartComponent implements OnInit{
       this.totalPrice = this.totalPrice + element.totalPrice;
     }
   }
+  
   opendialogbox(){
     let dialogRef = this.dialog.open(BuydialogboxComponent,{
-      width:'30%',
+      width:'60%',
       data:{
         totalItems:this.totalItems,
         total:this.totalPrice,
@@ -77,7 +80,7 @@ export class CartComponent implements OnInit{
       }
     })
   }
-  
+ 
   
 
 

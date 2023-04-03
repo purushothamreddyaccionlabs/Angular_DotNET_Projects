@@ -59,6 +59,7 @@ formnumber:any;
       }
       this.serviceapi.addProductsToCart(data).subscribe((res)=>{
         console.log(res);
+        this.dialogRef.close();
         this.toaster.success("Item added to your cart");
       })
      
