@@ -3,6 +3,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ApiServicesService } from 'src/app/service-API/api-services.service';
 import { ToastrService } from 'ngx-toastr';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dialogbox',
@@ -13,18 +15,21 @@ export class DialogboxComponent implements OnInit{
 
 cartSize = 1; 
 userdata:any;
+formnumber:any;
+
 
   constructor(
     public dialogRef:MatDialogRef<DialogboxComponent>,
     @Inject(MAT_DIALOG_DATA) public data:any=[],
     private serviceapi:ApiServicesService,
-    private toaster:ToastrService
+    private toaster:ToastrService,
+    private http:HttpClient,
+    private router:Router
     ){}
 
     ngOnInit(){
       const sessionData = sessionStorage.getItem('token');
-      this.userdata = JSON.parse(sessionData|| '{}');
-
+      this.userdata = JSON.parse(sessionData|| '{}');   
     }
 
     productInfo = this.data;
@@ -32,9 +37,10 @@ userdata:any;
     
   
    
-    //close dash board
+    //close dash board and open cart
     backtohome(){
       this.dialogRef.close();
+      this.router.navigate(['./user/cart'])
     }
 
     

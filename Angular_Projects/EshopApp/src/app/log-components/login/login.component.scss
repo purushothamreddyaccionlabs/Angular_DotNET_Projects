@@ -8,11 +8,12 @@
     align-items: center;
 }
 .login-card{
-    width:35%;
-    height: 70%;
+    width:30%;
+    height: 60%;
     background-color:azure;
     padding:30px;
     border-radius: 10px;
+    box-sizing:content-box;
 }
 .login-btn{
     color:black;

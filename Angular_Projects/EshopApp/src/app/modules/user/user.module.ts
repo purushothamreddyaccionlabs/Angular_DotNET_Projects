@@ -17,6 +17,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { DialogboxComponent } from './components/dialogbox/dialogbox.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CartComponent } from './components/cart/cart.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { BuydialogboxComponent } from './components/buydialogbox/buydialogbox.component';
 
 
 
@@ -28,7 +30,8 @@ import { CartComponent } from './components/cart/cart.component';
     HomeComponent,
     AboutComponent,
     DialogboxComponent,
-    CartComponent
+    CartComponent,
+    BuydialogboxComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +44,8 @@ import { CartComponent } from './components/cart/cart.component';
     MatMenuModule,
     MatButtonModule,
     NgImageSliderModule,
-    MatDialogModule
+    MatDialogModule,
+    IvyCarouselModule
   ]
 })
 export class UserModule { }

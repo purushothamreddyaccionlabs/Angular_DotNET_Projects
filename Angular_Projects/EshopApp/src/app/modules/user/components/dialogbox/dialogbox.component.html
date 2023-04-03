@@ -1,6 +1,11 @@
 <div class="container">
     <div class="row dialogbox-container">
-        <h1 class="main-text">PRODUCT INFORMATION</h1>
+        <div class="col-11">
+            <h1 class="main-text">PRODUCT INFORMATION</h1>
+        </div>
+        <div class="col-1">
+            <span class="cancel-btn" (click)="backtohome()"><img class="cancel-img" src='../../../../../assets/Images/cancel-image.png'/></span>
+        </div>
         
         <div class="col-6 image-card">
             <img class="image-styles" [src]="productInfo.imageURL"/>
@@ -28,10 +33,11 @@
                     </select>
                 
                     <button class="addtocartbtn" type="submit" (click)="addProductsToCart()">Add to Cart</button>
-                    <button class="addtocartbtn2" (click)="backtohome()">Back to home</button>
+                    <button class="addtocartbtn2" (click)="backtohome()">Go to Cart</button>
                     
                 
            </form>
         </div>
     </div>
 </div>
+

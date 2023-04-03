@@ -14,8 +14,7 @@ import { NotFoundComponent } from './log-components/not-found/not-found.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    CarouselModule,
+    IvyCarouselModule,
     ToastrModule.forRoot()
   ],
   providers: [],

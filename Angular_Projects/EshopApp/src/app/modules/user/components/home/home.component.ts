@@ -5,6 +5,7 @@ import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dial
 import { DialogboxComponent } from '../dialogbox/dialogbox.component';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,53 +13,18 @@ import { DialogboxComponent } from '../dialogbox/dialogbox.component';
 })
 export class HomeComponent implements OnInit{
   //Image slider
-  imageObject: Array<object> = [{
-    image: 'https://c0.wallpaperflare.com/preview/378/243/705/ecommerce-internet-marketing-online.jpg',
-    thumbImage: 'https://c0.wallpaperflare.com/preview/378/243/705/ecommerce-internet-marketing-online.jpg',
-    alt: 'Image alt'
-  }, {
-    image: '../../../../../assets/Images/51ovs76vmtL._SX3000_.jpg',
-    thumbImage: '../../../../../assets/Images/51ovs76vmtL._SX3000_.jpg',
-    alt: 'Image alt',
-    order: 1
-  },
-  {
-    image: '../../../../../assets/Images/books.jpg',
-    thumbImage: '../../../../../assets/Images/books.jpg',
-    alt: 'Image alt'
-  },
-  {
-    image: '../../../../../assets/Images/Electronics-keyboard.jpg',
-    thumbImage: '../../../../../assets/Images/Electronics-keyboard.jpg',
-    alt: 'Image alt'
-  },
-  {
-    image: '../../../../../assets/Images/Electronics-mouse.jpg',
-    thumbImage: '../../../../../assets/Images/Electronics-mouse.jpg',
-    alt: 'Image alt'
-  },
-  {
-    image: '../../../../../assets/Images/Hp.jpg',
-    thumbImage: '../../../../../assets/Images/Hp.jpg',
-    alt: 'Image alt'
-  },
-  {
-    image: '../../../../../assets/Images/Lenovo.jpg',
-    thumbImage: '../../../../../assets/Images/Lenovo.jpg',
-    alt: 'Image alt'
-  },
-  {
-    image: '../../../../../assets/Images/watch.jpg',
-    thumbImage: '../../../../../assets/Images/watch.jpg',
-    alt: 'Image alt'
-  },
-  
-  {
-    image: '../../../../../assets/Images/allu-Arjun.jpg',
-    thumbImage: '../../../../../assets/Images/allu-Arjun.jpg',
-    alt: 'Image alt'
-  }
+
+  images = [
+    { path: 'https://c0.wallpaperflare.com/preview/378/243/705/ecommerce-internet-marketing-online.jpg' },
+    { path: '../../../../../assets/Images/51ovs76vmtL._SX3000_.jpg' },
+    { path: '../../../../../assets/Images/books.jpg' },
+    {path:'../../../../../assets/Images/Electronics-keyboard.jpg'    },
+    {path:'../../../../../assets/Images/Electronics-mouse.jpg'},
+    {path:'../../../../../assets/Images/Hp.jpg'},
+    {path:'../../../../../assets/Images/Lenovo.jpg'},
+    {path:'../../../../../assets/Images/watch.jpg'}
   ];
+ 
 
   //list of products
   AllProductsList:any;
