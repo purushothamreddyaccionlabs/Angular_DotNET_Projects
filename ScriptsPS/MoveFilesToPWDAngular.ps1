@@ -14,5 +14,5 @@ ForEach-Object {
     }
 }
 
-# Delete specified folder
+# Delete specified folders
 Remove-Item $folderToDelete -Recurse -Force
