@@ -1,4 +1,4 @@
-# Define the paths for folders A and B
+# Define the paths for folders A and C
 $folderA = "D:\a\1\s\Angular_DotNET_Projects"
 $folderB = "D:\a\1\s"
 
