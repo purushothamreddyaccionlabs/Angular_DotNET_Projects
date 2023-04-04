@@ -58,6 +58,7 @@ export class ApiServicesService {
 
 
   isLoggedIn(){
+
     var sessionData = sessionStorage.getItem('token');
     if(sessionData !==null){
       return true;

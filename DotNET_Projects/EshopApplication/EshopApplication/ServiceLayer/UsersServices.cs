@@ -2,6 +2,7 @@
 using EshopApplication.Interfaces;
 using EshopApplication.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Models;
 
 namespace EshopApplication.ServiceLayer
@@ -15,7 +16,10 @@ namespace EshopApplication.ServiceLayer
         }
         public List<Users> GetUsersList()
         {
-            return _db.Users.ToList();
+            var userList = _db.Users.FromSqlRaw("SELECT * FROM Users");
+
+            /*return _db.Users.ToList();*/
+            return userList.ToList();
         }
         public Users RegisterUser(Users userData)
         {

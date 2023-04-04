@@ -46,9 +46,8 @@
                     <p class="cart-item">Your order eligible for FREE Delivery.</p>
                     <h1>SubTotal({{totalItems}} Items): <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
                         {{totalPrice}}</h1>
-                    <button class="buynowbtn" [disabled]="showbtn" (click)="opendialogbox()">Proceed to Buy</button>
+                    <button class="buynowbtn"  routerLink="../payments">Proceed to Buy</button>
                 </div>
-
             </div>
         </div>
 

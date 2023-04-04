@@ -18,7 +18,7 @@ import { DialogboxComponent } from './components/dialogbox/dialogbox.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CartComponent } from './components/cart/cart.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
-import { BuydialogboxComponent } from './components/buydialogbox/buydialogbox.component';
+import { PaymentsComponent } from './components/payments/payments.component';
 
 
 
@@ -31,7 +31,7 @@ import { BuydialogboxComponent } from './components/buydialogbox/buydialogbox.co
     AboutComponent,
     DialogboxComponent,
     CartComponent,
-    BuydialogboxComponent
+    PaymentsComponent
   ],
   imports: [
     CommonModule,
