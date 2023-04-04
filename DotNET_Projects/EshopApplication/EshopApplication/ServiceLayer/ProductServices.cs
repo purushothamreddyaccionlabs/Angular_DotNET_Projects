@@ -1,5 +1,6 @@
 ﻿using EshopApplication.DBContextLayer;
 using EshopApplication.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Models;
 
 namespace EshopApplication.ServiceLayer
@@ -26,22 +27,25 @@ namespace EshopApplication.ServiceLayer
 
         public List<Products> GetProducts()
         {
-            return _Db.Products.ToList();
+
+            /*return _Db.Products.ToList();*/
+            return _Db.Products.FromSqlRaw($"spGetAllProducts").ToList();
         }
 
         public List<Products> GetProductsByCategory(int categoryId)
         {
-            List<Products> products = _Db.Products.ToList();
-            List<Products> specificCategorylist = new List<Products>();
-            foreach(Products item in products)
-            {
-                if(item.CategoryId == categoryId)
-                {
-                    specificCategorylist.Add(item);
-                }
-            }
+            /* List<Products> products = _Db.Products.ToList();
+             List<Products> specificCategorylist = new List<Products>();
+             foreach(Products item in products)
+             {
+                 if(item.CategoryId == categoryId)
+                 {
+                     specificCategorylist.Add(item);
+                 }
+             }
 
-            return specificCategorylist;
+             return specificCategorylist;*/
+            return _Db.Products.FromSqlRaw($"spGetProductsByCategoryId {categoryId}").ToList(); ;
         }
     }
 }

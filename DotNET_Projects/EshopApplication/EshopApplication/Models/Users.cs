@@ -19,5 +19,10 @@ namespace Models
         public string Address { get; set; }
         public string Type { get; set; }
         public DateTime CreatedOn { get; set; } = DateTime.Now;
+
+        public static explicit operator Users(List<Users> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
