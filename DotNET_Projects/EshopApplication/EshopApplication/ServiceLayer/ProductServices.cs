@@ -43,9 +43,8 @@ namespace EshopApplication.ServiceLayer
                      specificCategorylist.Add(item);
                  }
              }
-
              return specificCategorylist;*/
-            return _Db.Products.FromSqlRaw($"spGetProductsByCategoryId {categoryId}").ToList(); ;
+            return _Db.Products.FromSqlRaw($"spGetProductsByCategoryId {categoryId}").ToList();
         }
     }
 }

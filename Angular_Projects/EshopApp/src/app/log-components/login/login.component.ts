@@ -41,10 +41,10 @@ export class LoginComponent implements OnInit{
       password:['',[Validators.required,Validators.minLength(4)]]
     })
   }
-  //Checking valid user or not
-  checkValidUser(){
-    return this.apiservices.isLoggedIn();
-  }
+  // //Checking valid user or not
+  // checkValidUser(){
+  //   return this.apiservices.isLoggedIn();
+  // }
 
   onSubmit(){
     if(this.loginform.valid){
@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit{
         password:this.loginform.get('password').value
       }
      this.apiservices.login(data);
-     this.invalidUser = this.checkValidUser();
+    //  this.invalidUser = this.checkValidUser();
      
     }else{
       this.invalidform = true;

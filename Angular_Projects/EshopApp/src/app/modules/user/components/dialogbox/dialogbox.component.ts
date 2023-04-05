@@ -48,16 +48,19 @@ formnumber:any;
     addProductsToCart(){
       var totalAmout = (this.productInfo.unitPrice -  this.productInfo.discount)*this.cartSize;
       var data = {
-        userId:this.userdata.id,
-        product:this.productInfo.productName,
+        // userId:this.userdata.id,
+        // product:this.productInfo.productName,
+        // productId:this.productInfo.id,
+        // imageURL:this.productInfo.imageURL,
+        // unitPrice:this.productInfo.unitPrice,
+        // discount:this.productInfo.discount,
+        // quantity:this.cartSize,
+        // totalPrice:totalAmout
         productId:this.productInfo.id,
-        imageURL:this.productInfo.imageURL,
-        unitPrice:this.productInfo.unitPrice,
-        discount:this.productInfo.discount,
         quantity:this.cartSize,
-        totalPrice:totalAmout
+        userId:this.userdata.id
       }
-      this.serviceapi.addProductsToCart(data).subscribe((res)=>{
+      this.serviceapi.addProductsToCarts(data).subscribe((res)=>{
         console.log(res);
         this.dialogRef.close();
         this.toaster.success("Item added to your cart");

@@ -1,4 +1,4 @@
-import { Component, OnInit, ɵsetAllowDuplicateNgModuleIdsForTest } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
 import { ApiServicesService } from 'src/app/service-API/api-services.service';
@@ -18,7 +18,7 @@ export class CartComponent implements OnInit{
 
   allCartItems:any=[];
   userdata:any;
-  totalPrice = 0;
+  SubTotalPrice = 0;
   totalItems = 0;
 
   
@@ -45,7 +45,7 @@ export class CartComponent implements OnInit{
     this.apiservice.DeletecartItem(product.id).subscribe((res)=>{
       this.toastr.success("Item Deleted");
       this.GetListofItems();
-      this.totalPrice - product.totalPrice;
+      this.SubTotalPrice - product.totalPrice;
       
     })
   }
@@ -55,16 +55,11 @@ export class CartComponent implements OnInit{
     this.apiservice.getCartItemsbyuserId(id).subscribe((response)=>{
       this.allCartItems = response;
     })
-    this.totalPrice = 0;
+    this.SubTotalPrice = 0;
     this.totalItems = this.allCartItems.length;
     for (let index = 0; index <= this.allCartItems.length; index++) {
         const element = this.allCartItems[index];
-      this.totalPrice = this.totalPrice + element.totalPrice;
+      this.SubTotalPrice += element.totalPrice;
     }
   }
-  
- 
-  
-
-
 }

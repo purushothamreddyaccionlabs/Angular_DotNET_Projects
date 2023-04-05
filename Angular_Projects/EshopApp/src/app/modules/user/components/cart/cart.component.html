@@ -8,7 +8,7 @@
                 </div>
                 <hr />
                 <div class="all-products">
-                    <div *ngIf="totalPrice==0" class="cart-empty">
+                    <div *ngIf="SubTotalPrice==0" class="cart-empty">
                         <img class="empty-cart-img" src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg"/>
                         <h1 class="cart-empty1">Your Cart is empty</h1></div>
                     <div class="row " *ngFor="let product of allCartItems">
@@ -45,7 +45,7 @@
                     <h1 class="title">CART ITEMS</h1>
                     <p class="cart-item">Your order eligible for FREE Delivery.</p>
                     <h1>SubTotal({{totalItems}} Items): <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
-                        {{totalPrice}}</h1>
+                        {{SubTotalPrice}}</h1>
                     <button class="buynowbtn"  routerLink="../payments">Proceed to Buy</button>
                 </div>
             </div>

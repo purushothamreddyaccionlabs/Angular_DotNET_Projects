@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Models
+﻿namespace EshopApplication.Models.spModel
 {
-    public class Cart
+
+    //model to bind the result of spGetItemsByUserId stored procedure
+    public class GetProductsFromCart
     {
-        [Key]
         public int Id { get; set; }
         public int UserId { get; set; }
         public string Product { get; set; }

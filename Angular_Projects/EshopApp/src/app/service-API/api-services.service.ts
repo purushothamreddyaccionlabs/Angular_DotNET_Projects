@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Injectable({
@@ -10,7 +11,8 @@ export class ApiServicesService {
 
   constructor(
     private http:HttpClient,
-    private router:Router
+    private router:Router,
+    private toastr:ToastrService
   ) { }
  
   url = "https://localhost:7103";
@@ -36,24 +38,24 @@ export class ApiServicesService {
     return this.http.get(this.url + "/api/Products/GetProductsByCategoryId"+i);
   }
 
-  //Add products to cart
-  addProductsToCart(data:any){
-    return this.http.post(this.url + "/api/Cart/AddToCart",data);
+  //Add Products to Carts Table
+  addProductsToCarts(data:any){
+    return this.http.post(this.url + "/api/Carts/AddProductsToCart",data);
   }
 
-  //Get cart items by userId
+  //Get cart items by userId sp
   getCartItemsbyuserId(num:any){
-    return this.http.get(this.url + "/api/Cart/GetProductsBy" + num);
+    return this.http.get(this.url + "/api/Carts/GetProductsFromCartbyUser" + num);
   }
 
   //get product by productid
   getProductbyProductID(num:any){
     return this.http.get(this.url + "/api/Products/GetProductById"+num);
   }
-
+ 
   //Delete products in cart table
   DeletecartItem(num:any){
-    return this.http.delete(this.url + "/api/Cart/DeleteProductbyCartId" + num);
+    return this.http.delete(this.url + "/api/Carts/DeleteProductbyCartId" + num);
   }
 
 
@@ -72,6 +74,8 @@ login(data:any){
    this.validateUser(data).subscribe((res) => { 
     sessionStorage.setItem('token', JSON.stringify(res));
     this.router.navigate(['/user']);
+  },(err)=>{
+    this.toastr.error("Invalid Username & Password");
   })
   }
 

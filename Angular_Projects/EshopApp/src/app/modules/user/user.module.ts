@@ -19,7 +19,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CartComponent } from './components/cart/cart.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { PaymentsComponent } from './components/payments/payments.component';
-
+import { OrdersComponent } from './components/orders/orders.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PaymentsComponent } from './components/payments/payments.component';
     AboutComponent,
     DialogboxComponent,
     CartComponent,
-    PaymentsComponent
+    PaymentsComponent,
+    OrdersComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { PaymentsComponent } from './components/payments/payments.component';
     MatButtonModule,
     NgImageSliderModule,
     MatDialogModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    MatTableModule
   ]
 })
 export class UserModule { }

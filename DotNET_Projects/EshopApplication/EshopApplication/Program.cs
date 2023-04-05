@@ -14,8 +14,8 @@ builder.Services.AddDbContext<EshopDB>(options => options.UseSqlServer(builder.C
 builder.Services.AddScoped<IUsers, UsersServices>();
 builder.Services.AddScoped<ICategories, CategoriesServices>();
 builder.Services.AddScoped<IProducts,ProductServices>();
-builder.Services.AddScoped<ICart, CartServices>();
 builder.Services.AddScoped<IOrders, OrdersServices>();
+builder.Services.AddScoped<ICarts, CartsServices>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
