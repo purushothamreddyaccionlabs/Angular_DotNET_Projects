@@ -14,6 +14,12 @@ namespace EshopApplication.ServiceLayer
         {
             _db = db;
         }
+
+        public object GetUserDetailsById(int id)
+        {
+            return _db.Users.Find(id);
+        }
+
         public List<Users> GetUsersList()
         {
             var userList = _db.Users.FromSqlRaw("SELECT * FROM Users");

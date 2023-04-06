@@ -47,5 +47,13 @@ namespace EshopApplication.Controllers
             var usersList = _Icarts.GetAllProducts(id);
             return Ok(usersList);
         }
+
+        [HttpDelete]
+        [Route("BulkDeletebyUser{userId}")]
+        public IActionResult BulkDeletebyUser(int userId)
+        {
+            _Icarts.BulkDeleteItemsbyUserId(userId);
+            return Ok();
+        }
     }
 }

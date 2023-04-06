@@ -28,6 +28,11 @@ export class ApiServicesService {
     return this.http.post(this.url+ "/api/Users/Register",data);
   }
 
+  //Get User data by id
+  getUserDatabyId(data:any){
+    return this.http.get(this.url + "/api/Users/GetuserbyUserId" + data);
+  }
+
   //List of Products
   allProductsList(){
     return this.http.get(this.url + "/api/Products/GetProducts");
@@ -57,6 +62,21 @@ export class ApiServicesService {
   DeletecartItem(num:any){
     return this.http.delete(this.url + "/api/Carts/DeleteProductbyCartId" + num);
   }
+  //Bulk delete products based on UserId
+  DeleteAllProductsInCarts(num:any){
+    return this.http.delete(this.url + "/api/Carts/BulkDeletebyUser"+num);
+  }
+  
+
+  //Add bulk products to orders table
+  AddProductstoOrders(data:any){
+    return this.http.post(this.url + "/api/Orders/bulkAdd",data);
+  }
+
+  //Get user ordered products list
+  GetUserOrderedProducts(num:any){
+    return this.http.get(this.url + "/api/Orders/ordersbyUser" + num);
+  }
 
 
   isLoggedIn(){
@@ -81,7 +101,8 @@ login(data:any){
 
   //For logout user
   logout(){
-    sessionStorage.removeItem('token');
+    // sessionStorage.removeItem('token');
+    sessionStorage.clear()
     this.router.navigate(['/login']);
   }
 

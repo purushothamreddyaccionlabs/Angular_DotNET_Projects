@@ -61,5 +61,12 @@ namespace EshopApplication.Controllers
             }
            
         }
+        [HttpGet]
+        [Route("GetuserbyUserId{id}")]
+        public IActionResult GetuserbyUserId(int id)
+        {
+            var userData = _Iusers.GetUserDetailsById(id);
+            return Ok(userData);
+        }
     }
 }

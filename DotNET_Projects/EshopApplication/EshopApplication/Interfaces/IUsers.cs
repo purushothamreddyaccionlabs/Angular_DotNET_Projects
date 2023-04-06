@@ -9,6 +9,7 @@ namespace EshopApplication.Interfaces
         Users RegisterUser(Users userData);
         Users UpdateProfile(Users userData);
         Users ValidateUser(LoginUser userData);
+        Object GetUserDetailsById(int id);
 
     }
 }

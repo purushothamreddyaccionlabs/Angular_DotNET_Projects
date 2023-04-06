@@ -10,10 +10,16 @@ namespace Models
 {
     public class Orders
     {
-        public int Id { get; set; }
+        [Key]
+        public int OrderId { get; set; }
+        [Required]
         public int UserId { get; set; }
-        public int TotalItems { get; set; }
-        public int OrderTotal { get; set; }
+        [Required]
+        public int ProductId { get; set; }
+        [Required]
+        public int Quantity { get; set; }
+        public DateTime OrderDate { get; set; }
+        [Required]
         public string OrderStatus { get; set; }
     }
 }

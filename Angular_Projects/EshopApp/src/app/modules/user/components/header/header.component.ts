@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiServicesService } from 'src/app/service-API/api-services.service';
 
 
@@ -7,11 +7,22 @@ import { ApiServicesService } from 'src/app/service-API/api-services.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
 
 constructor(
-  private apiservices:ApiServicesService
+  private apiservices:ApiServicesService,
+  private serviceAPI : ApiServicesService
 ){}
+
+userData:any;
+userId:any;
+ngOnInit(){
+  var data = sessionStorage.getItem('token');
+  this.userId = JSON.parse(data || '{}');
+  this.serviceAPI.getUserDatabyId(this.userId.id).subscribe((res)=>{
+    this.userData = res;
+  })
+}
   logout(){
     this.apiservices.logout();
   }

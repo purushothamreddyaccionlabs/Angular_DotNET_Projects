@@ -41,7 +41,10 @@ namespace EshopApplication.ServiceLayer
             return _db.GetGetProductsFromCarts.FromSqlRaw($"spGetItemsByUserId {userId}").ToList();
         }
 
-
-
+        public void BulkDeleteItemsbyUserId(int userId)
+        {
+            _db.Database.ExecuteSqlRaw($"spDeleteitemsbyUserId {userId}");
+            _db.SaveChanges();
+        }
     }
 }
