@@ -101,7 +101,6 @@ login(data:any){
 
   //For logout user
   logout(){
-    // sessionStorage.removeItem('token');
     sessionStorage.clear()
     this.router.navigate(['/login']);
   }
