@@ -5,6 +5,7 @@ $AZORG = "Learning-Devops-7777"
 
 # Clone the repository and remove its Git historyyy
 git clone https://github.com/purushothamreddyaccionlabs/Angular_DotNET_Projects.git
+ls Angular_DotNET_Projects
 cd Angular_DotNET_Projects
 Remove-Item -Recurse -Force .git
 
