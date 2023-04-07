@@ -1,4 +1,3 @@
-
 $AZUREPAT = $env:AZUREPAT
 $AZUSERNAME = "anything"
 $AZUSER_EMAIL = "nageshdevops77@outlook.com"
@@ -14,6 +13,9 @@ cd ..
 # Clone the repository again, this time with Azure credentials
 $GIT_CMD_REPOSITORY="https://$AZUREPAT@dev.azure.com/Learning-Devops-7777/Abdul/_git/syncgitEshopCommerce"
 git clone $GIT_CMD_REPOSITORY
+
+# Copy the contents of the local repository to the cloned Azure repository
+Copy-Item -Recurse Angular_DotNET_Projects/* syncgitEshopCommerce/
 
 $folder1 = "D:\a\Angular_DotNET_Projects"
 $folder2 = "D:\a\syncgitEshopCommerce"
@@ -36,9 +38,6 @@ Write-Host "Unique files or folders in " + $folder2 + ":"
 $uniqueInFolder2 | ForEach-Object { Write-Host $_.FullName }
 
 $uniqueInFolder2 | ForEach-Object { Remove-Item $_.FullName -Force }
-
-# Copy the contents of the local repository to the cloned Azure repository
-Copy-Item -Recurse Angular_DotNET_Projects/* syncgitEshopCommerce/
 
 cd syncgitEshopCommerce
 
