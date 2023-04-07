@@ -3,6 +3,8 @@ $AZUSERNAME = "anything"
 $AZUSER_EMAIL = "nageshdevops77@outlook.com"
 $AZORG = "Learning-Devops-7777"
 
+git config --system core.longpaths true
+
 # Clone the repository and remove its Git historyyyy
 git clone https://github.com/purushothamreddyaccionlabs/Angular_DotNET_Projects.git
 
