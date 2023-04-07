@@ -25,15 +25,19 @@ export class HomeComponent implements OnInit{
     {path:'../../../../../assets/Images/watch.jpg'}
   ];
  
-
   //list of products
   AllProductsList:any;
+  CartSize:any;
+  user:any;
+  lengthofCart:any;
 
   constructor(
     private serviceapi:ApiServicesService,
     private dialog:MatDialog
   ){}
   ngOnInit(){
+    var userdata = sessionStorage.getItem('token');
+    this.user = JSON.parse(userdata || '');
     this.DisplayData();
   }
 
@@ -43,6 +47,13 @@ export class HomeComponent implements OnInit{
       this.AllProductsList = res;
       console.log(res);
     });
+    //for cartSize
+    this.serviceapi.getCartItemsbyuserId(this.user.id).subscribe((response)=>{
+      this.CartSize = response;
+      this.lengthofCart = JSON.parse(this.CartSize.length);
+      this.updateCount(this.lengthofCart);
+    });
+    
 
   }
 
@@ -66,6 +77,9 @@ export class HomeComponent implements OnInit{
       data:item
     })
   }
-
+  //display cartsize in header
+  updateCount(count:number) {
+    this.serviceapi.updateCount(count);
+  }
 
 }

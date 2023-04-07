@@ -175,3 +175,13 @@ D:\Dot Net Projects\EmployeeManagement\EmployeeManagement\obj\Debug\net6.0\ref\E
 D:\Dot Net Projects\EmployeeManagement\EmployeeManagement\bin\Debug\net6.0\libman.json
 D:\Dot Net Projects\EmployeeManagement\EmployeeManagement\bin\Debug\net6.0\Models1.dll
 D:\Dot Net Projects\EmployeeManagement\EmployeeManagement\bin\Debug\net6.0\Models1.pdb
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.csproj.AssemblyReference.cache
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.AssemblyInfoInputs.cache
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.AssemblyInfo.cs
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.csproj.CoreCompileInputs.cache
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.dll
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\refint\EmployeeManagement.dll
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\EmployeeManagement\obj\Debug\net6.0\EmployeeManagement.pdb

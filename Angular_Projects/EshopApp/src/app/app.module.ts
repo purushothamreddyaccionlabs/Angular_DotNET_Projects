@@ -36,7 +36,9 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     FormsModule,
     HttpClientModule,
     IvyCarouselModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot({
+      timeOut:1000,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

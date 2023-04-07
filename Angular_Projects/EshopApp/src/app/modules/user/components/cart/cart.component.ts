@@ -34,6 +34,7 @@ export class CartComponent implements OnInit {
     console.log(this.userdata);
     this.GetListofItems();
     this.getTotalpriceandlen();
+   
   }
 
   GetListofItems() {
@@ -41,8 +42,10 @@ export class CartComponent implements OnInit {
     this.apiservice.getCartItemsbyuserId(id).subscribe((response) => {
       console.log(response);
       this.allCartItems = response;
+      this.updateCount(this.allCartItems.length);
       this.getTotalpriceandlen();
     })
+    
   }
 
   deleteItem(product: any) {
@@ -50,6 +53,7 @@ export class CartComponent implements OnInit {
       this.toastr.success("Item Deleted");
       this.GetListofItems();
       this.SubTotalPrice - product.totalPrice;
+      this.updateCount(this.allCartItems.length - 1);
 
     })
   }
@@ -88,5 +92,10 @@ export class CartComponent implements OnInit {
     sessionStorage.setItem('orderItems',JSON.stringify(newArray));
    
     this.router.navigate(['user/payments']);
+  }
+
+  //for update cart icon count
+  updateCount(count:number) {
+    this.apiservice.updateCount(count);
   }
 }

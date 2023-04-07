@@ -2,13 +2,19 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiServicesService {
 
+  private countSubject = new BehaviorSubject<number>(0);
+  public count$ = this.countSubject.asObservable();
+
+  updateCount(count: number) {
+    this.countSubject.next(count);
+  }
   constructor(
     private http:HttpClient,
     private router:Router,

@@ -13,5 +13,6 @@ namespace EshopApplication.Interfaces
         List<GetProductsFromCart> GetAllProducts(int userId);
 
         void BulkDeleteItemsbyUserId(int userId);
+        
     }
 }

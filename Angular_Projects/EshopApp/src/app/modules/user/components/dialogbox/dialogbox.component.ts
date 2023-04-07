@@ -15,7 +15,9 @@ export class DialogboxComponent implements OnInit{
 
 cartSize = 1; 
 userdata:any;
-formnumber:any;
+count = 3;
+CartProducts:any;
+productInfo = this.data; //userdata like id firstname
 
 
   constructor(
@@ -32,8 +34,8 @@ formnumber:any;
       this.userdata = JSON.parse(sessionData|| '{}');   
     }
 
-    productInfo = this.data;
-
+    
+  
     
   
    
@@ -46,16 +48,7 @@ formnumber:any;
     
 
     addProductsToCart(){
-      var totalAmout = (this.productInfo.unitPrice -  this.productInfo.discount)*this.cartSize;
       var data = {
-        // userId:this.userdata.id,
-        // product:this.productInfo.productName,
-        // productId:this.productInfo.id,
-        // imageURL:this.productInfo.imageURL,
-        // unitPrice:this.productInfo.unitPrice,
-        // discount:this.productInfo.discount,
-        // quantity:this.cartSize,
-        // totalPrice:totalAmout
         productId:this.productInfo.id,
         quantity:this.cartSize,
         userId:this.userdata.id
@@ -63,9 +56,21 @@ formnumber:any;
       this.serviceapi.addProductsToCarts(data).subscribe((res)=>{
         console.log(res);
         this.dialogRef.close();
+        this.ForUpdateCartIconcount();
         this.toaster.success("Item added to your cart");
       })
-     
+       
+    }
+
+    ForUpdateCartIconcount(){
+      this.serviceapi.getCartItemsbyuserId(this.userdata.id).subscribe((response)=>{
+        this.CartProducts = response;
+        this.updateCount(this.CartProducts.length);
+      })  
+    }
+
+    updateCount(count:number) {
+      this.serviceapi.updateCount(count);
     }
 
     

@@ -68,5 +68,6 @@ namespace EshopApplication.Controllers
             var userData = _Iusers.GetUserDetailsById(id);
             return Ok(userData);
         }
+
     }
 }

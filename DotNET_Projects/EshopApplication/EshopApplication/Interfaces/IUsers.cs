@@ -10,6 +10,6 @@ namespace EshopApplication.Interfaces
         Users UpdateProfile(Users userData);
         Users ValidateUser(LoginUser userData);
         Object GetUserDetailsById(int id);
-
+    
     }
 }

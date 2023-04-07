@@ -45,7 +45,13 @@ export class PaymentsComponent implements OnInit {
       console.log('deleted');
       
     })
-    this.router.navigate(['user']);
     this.toastr.success('Order Placed');
+    this.updateCount(0);
+    this.router.navigate(['user/orders']);
   }
+
+  updateCount(count:number) {
+    this.serviceAPI.updateCount(count);
+  }
+
 }

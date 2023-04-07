@@ -10,3 +10,15 @@ D:\Dot Net Projects\EmployeeManagement\ServiceLayer1\obj\Debug\net6.0\Models.dll
 D:\Dot Net Projects\EmployeeManagement\ServiceLayer1\obj\Debug\net6.0\refint\Models.dll
 D:\Dot Net Projects\EmployeeManagement\ServiceLayer1\obj\Debug\net6.0\Models.pdb
 D:\Dot Net Projects\EmployeeManagement\ServiceLayer1\obj\Debug\net6.0\ref\Models.dll
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\bin\Debug\net6.0\Models.deps.json
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\bin\Debug\net6.0\Models.dll
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\bin\Debug\net6.0\Models.pdb
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\Models.AssemblyInfo.cs
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\Models.dll
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\refint\Models.dll
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\Models.pdb
+D:\Projects_DotNet_Angular\DotNET_Projects\Employee_Leave_Mgt\ServiceLayer1\obj\Debug\net6.0\ref\Models.dll

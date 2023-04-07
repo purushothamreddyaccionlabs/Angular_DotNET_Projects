@@ -49,10 +49,7 @@ namespace EshopApplication.ServiceLayer
             {
                 userData = null;
             }
-
-
             return userData;
-
 
         }
 
@@ -79,7 +76,7 @@ namespace EshopApplication.ServiceLayer
 
         public Users ValidateUser(LoginUser userData)
         {
-           /* Response response = new Response();*/
+       
             var User_input_Email = userData.Email;
             var User_input_Password = userData.Password;
             List<Users> listUsers = _db.Users.ToList();

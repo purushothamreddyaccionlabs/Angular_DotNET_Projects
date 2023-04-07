@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiServicesService } from 'src/app/service-API/api-services.service';
-
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +10,7 @@ import { ApiServicesService } from 'src/app/service-API/api-services.service';
 export class HeaderComponent implements OnInit{
 
 constructor(
-  private apiservices:ApiServicesService,
-  private serviceAPI : ApiServicesService
+  public serviceAPI : ApiServicesService
 ){}
 
 userData:any;
@@ -21,10 +20,11 @@ ngOnInit(){
   this.userId = JSON.parse(data || '{}');
   this.serviceAPI.getUserDatabyId(this.userId.id).subscribe((res)=>{
     this.userData = res;
+
   })
 }
   logout(){
-    this.apiservices.logout();
+    this.serviceAPI.logout();
   }
 
 }
