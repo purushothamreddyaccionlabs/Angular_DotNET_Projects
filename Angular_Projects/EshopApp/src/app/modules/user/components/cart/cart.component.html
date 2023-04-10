@@ -1,6 +1,10 @@
-<div class="bg-container pt-5 pb-5 mt-5 ">
+<div class="bg-container pt-3 pb-5 mt-5 ">
     <div class="container-fluid ">
         <div class="row">
+            <div class="col-12">
+                <mat-icon routerLink="/user/home" class="arrow">arrow_back</mat-icon>
+            </div>
+           
             <div class="col-8 cart-items">
                 <div class="main-headings">
                     <h1 class="main-text">Shopping cart</h1>
@@ -32,7 +36,7 @@
                             </div>
                             <div class="col-4 price-card">
                                 <h1 class="text"><i class="fa-sharp fa-solid fa-indian-rupee-sign">
-                                        {{product.totalPrice + product.discount}}</i></h1>
+                                        {{product.unitPrice}}</i></h1>
                             </div>
                         </div>
                         <hr />

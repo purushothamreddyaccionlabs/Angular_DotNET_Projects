@@ -27,6 +27,7 @@ export class PaymentsComponent implements OnInit {
     this.newArray = JSON.parse(orderdata||'{}');
     // console.log(this.Userid);
     // console.log(this.cartItemsData);
+    
     console.log(this.newArray);
     this.GetUserInformation();
   }
@@ -38,8 +39,8 @@ export class PaymentsComponent implements OnInit {
   }
   placeOrder(){
     this.serviceAPI.AddProductstoOrders(this.newArray).subscribe((response)=>{
-      console.log(response);
-      console.log(this.newArray);
+      // console.log(response);
+      // console.log(this.newArray);
     })
     this.serviceAPI.DeleteAllProductsInCarts(this.Userid.id).subscribe((res)=>{
       console.log('deleted');
@@ -47,7 +48,7 @@ export class PaymentsComponent implements OnInit {
     })
     this.toastr.success('Order Placed');
     this.updateCount(0);
-    this.router.navigate(['user/orders']);
+    this.router.navigate(['user/home']);
   }
 
   updateCount(count:number) {

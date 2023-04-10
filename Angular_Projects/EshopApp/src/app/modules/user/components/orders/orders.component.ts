@@ -28,7 +28,6 @@ OrdersList:any;
   GetOrdersList(){
     this.serviceAPI.GetUserOrderedProducts(this.UserId.id).subscribe((response)=>{
       this.OrdersList = response;
-      console.log(response);
     })
   }
   

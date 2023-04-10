@@ -68,7 +68,7 @@ export class CartComponent implements OnInit {
     for (let index = 0; index <= this.allCartItems.length; index++) {
       const element = this.allCartItems[index];
       this.SubTotalPrice += element.totalPrice;
-      this.totalDiscount +=element.discount;
+      this.totalDiscount += element.quantity * element.discount;
     }
   }
 

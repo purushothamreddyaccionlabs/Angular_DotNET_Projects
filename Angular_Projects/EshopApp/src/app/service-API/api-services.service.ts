@@ -21,6 +21,7 @@ export class ApiServicesService {
     private toastr:ToastrService
   ) { }
  
+
   url = "https://localhost:7103";
 
 
@@ -99,6 +100,7 @@ export class ApiServicesService {
 login(data:any){
    this.validateUser(data).subscribe((res) => { 
     sessionStorage.setItem('token', JSON.stringify(res));
+    
     this.router.navigate(['/user']);
   },(err)=>{
     this.toastr.error("Invalid Username & Password");

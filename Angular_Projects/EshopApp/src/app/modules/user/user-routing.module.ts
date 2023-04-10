@@ -6,6 +6,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { PaymentsComponent } from './components/payments/payments.component';
 import { OrdersComponent } from './components/orders/orders.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AdminUserComponent } from './components/admin-user/admin-user.component';
 
 
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
       { path: 'cart', component: CartComponent },
       { path: 'payments', component: PaymentsComponent },
       { path: 'orders', component: OrdersComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: 'admin', component: AdminUserComponent },
       { path: '', redirectTo: '/user/home', pathMatch: 'full' }
     ]
   },
