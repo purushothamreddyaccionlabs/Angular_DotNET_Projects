@@ -69,5 +69,12 @@ namespace EshopApplication.Controllers
             return Ok(userData);
         }
 
+        [HttpGet]
+        [Route("GetTotalOrders")]
+        public IActionResult GetTotalOrders()
+        {
+            var Orderslist = _Iusers.AllOrdersList();
+            return Ok(Orderslist);
+        }
     }
 }

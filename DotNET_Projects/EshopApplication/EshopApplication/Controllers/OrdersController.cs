@@ -1,4 +1,6 @@
 ﻿using EshopApplication.Interfaces;
+using EshopApplication.Models;
+using EshopApplication.Models.spModel;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -46,5 +48,23 @@ namespace EshopApplication.Controllers
             var result = this.IOrders.getUserOrderProducts(id);
             return Ok(result);
         }
+
+        [HttpPut]
+        [Route("UpdateOrderStatus")]
+        public IActionResult UpdateOrdersStatus(UpdateOrders data)
+        {
+            var updatedRecord = this.IOrders.UpdateOrderStatus(data);
+            if(updatedRecord != null)
+            {
+                return Created("/" + updatedRecord.OrderId, updatedRecord);
+            }
+            else
+            {
+                return BadRequest();
+            }
+            
+        }
+
+     
     }
 }

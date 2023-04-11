@@ -1,5 +1,6 @@
 ﻿using EshopApplication.DBContextLayer;
 using EshopApplication.Interfaces;
+using EshopApplication.Models;
 using EshopApplication.Models.spModel;
 using Microsoft.EntityFrameworkCore;
 using Models;
@@ -29,6 +30,27 @@ namespace EshopApplication.ServiceLayer
         public List<GetOrdersByUserId> getUserOrderProducts(int userId)
         {
             return eshopDB.getOrdersByUserIds.FromSqlRaw($"spGetOrdersByUserId {userId}").ToList();
+        }
+
+     
+
+        public Orders UpdateOrderStatus(UpdateOrders data)
+        {
+            var existingData = eshopDB.Orders.Find(data.orderId);
+            if(existingData != null)
+            {
+                existingData.OrderId = data.orderId;
+                existingData.UserId = existingData.UserId;
+                existingData.ProductId = existingData.ProductId;
+                existingData.Quantity = existingData.Quantity;
+                existingData.OrderDate = existingData.OrderDate;
+                existingData.OrderStatus = data.status;
+                eshopDB.Update(existingData);
+                eshopDB.Entry(existingData).Property(x => x.OrderId).IsModified = false;//To prevent Identity column update issue
+                eshopDB.SaveChanges();
+            }
+            return existingData;
+
         }
     }
 }

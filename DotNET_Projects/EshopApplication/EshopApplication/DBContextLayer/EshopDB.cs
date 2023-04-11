@@ -17,6 +17,8 @@ namespace EshopApplication.DBContextLayer
         public DbSet<Carts> Carts { get; set; }
         public DbSet<GetProductsFromCart> GetGetProductsFromCarts { get; set; }
         public DbSet<GetOrdersByUserId> getOrdersByUserIds { get; set; }
+        public DbSet<UsersOrdersList> usersOrdersLists { get; set; }
+        public DbSet<UpdateOrders> updateOrders { get; set; }
 
     }
 }

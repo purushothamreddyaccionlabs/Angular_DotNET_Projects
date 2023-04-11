@@ -1,6 +1,7 @@
 ﻿using EshopApplication.DBContextLayer;
 using EshopApplication.Interfaces;
 using EshopApplication.Models;
+using EshopApplication.Models.spModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models;
@@ -90,6 +91,11 @@ namespace EshopApplication.ServiceLayer
             }
             return existing_userdata;
         
+        }
+
+        public List<UsersOrdersList> AllOrdersList()
+        {
+            return _db.usersOrdersLists.FromSqlRaw("spAllUsersOrders").ToList();
         }
     }
 }

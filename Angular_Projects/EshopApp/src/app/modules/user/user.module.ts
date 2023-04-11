@@ -22,7 +22,6 @@ import { PaymentsComponent } from './components/payments/payments.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import {MatTableModule} from '@angular/material/table';
 import { ProfileComponent } from './components/profile/profile.component';
-import { AdminUserComponent } from './components/admin-user/admin-user.component';
 
 
 @NgModule({
@@ -36,8 +35,7 @@ import { AdminUserComponent } from './components/admin-user/admin-user.component
     CartComponent,
     PaymentsComponent,
     OrdersComponent,
-    ProfileComponent,
-    AdminUserComponent
+    ProfileComponent
   ],
   imports: [
     CommonModule,

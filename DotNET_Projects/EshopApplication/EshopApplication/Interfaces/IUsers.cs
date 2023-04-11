@@ -1,4 +1,5 @@
 ﻿using EshopApplication.Models;
+using EshopApplication.Models.spModel;
 using Models;
 
 namespace EshopApplication.Interfaces
@@ -10,6 +11,8 @@ namespace EshopApplication.Interfaces
         Users UpdateProfile(Users userData);
         Users ValidateUser(LoginUser userData);
         Object GetUserDetailsById(int id);
+
+        List<UsersOrdersList> AllOrdersList();
     
     }
 }

@@ -15,13 +15,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { AdminComponent } from './log-components/admin/admin.component';
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     FormsModule,
     HttpClientModule,
     IvyCarouselModule,
+    MatTableModule,
     ToastrModule.forRoot({
       timeOut:1000,
     })

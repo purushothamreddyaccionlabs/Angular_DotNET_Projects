@@ -1,4 +1,5 @@
-﻿using EshopApplication.Models.spModel;
+﻿using EshopApplication.Models;
+using EshopApplication.Models.spModel;
 using Models;
 
 namespace EshopApplication.Interfaces
@@ -10,6 +11,10 @@ namespace EshopApplication.Interfaces
         Orders AddingProducts(Orders products);
 
         List<GetOrdersByUserId> getUserOrderProducts(int userId);
+
+        Orders UpdateOrderStatus(UpdateOrders data);
+
+     
     
     }
 }

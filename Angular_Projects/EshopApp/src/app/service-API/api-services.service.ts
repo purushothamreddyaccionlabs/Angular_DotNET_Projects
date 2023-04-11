@@ -11,6 +11,7 @@ export class ApiServicesService {
 
   private countSubject = new BehaviorSubject<number>(0);
   public count$ = this.countSubject.asObservable();
+  userData:any;
 
   updateCount(count: number) {
     this.countSubject.next(count);
@@ -85,6 +86,15 @@ export class ApiServicesService {
     return this.http.get(this.url + "/api/Orders/ordersbyUser" + num);
   }
 
+  //Get total orders List
+  GetTotalOrdersList(){
+    return this.http.get(this.url + "/api/Users/GetTotalOrders");
+  }
+  
+  //Update the user order Status
+  UpdateOrderStatus(data:any){
+    return this.http.put(this.url + "/api/Orders/UpdateOrderStatus",data);
+  }
 
   isLoggedIn(){
 
@@ -100,8 +110,14 @@ export class ApiServicesService {
 login(data:any){
    this.validateUser(data).subscribe((res) => { 
     sessionStorage.setItem('token', JSON.stringify(res));
+    this.userData = res;
+    console.log(this.userData);
+    if(this.userData.type == 'admin'){
+      this.router.navigate(['admin']);
+    }else{
+      this.router.navigate(['/user']);
+    }
     
-    this.router.navigate(['/user']);
   },(err)=>{
     this.toastr.error("Invalid Username & Password");
   })
