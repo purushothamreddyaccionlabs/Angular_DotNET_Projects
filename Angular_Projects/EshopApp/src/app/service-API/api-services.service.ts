@@ -96,6 +96,16 @@ export class ApiServicesService {
     return this.http.put(this.url + "/api/Orders/UpdateOrderStatus",data);
   }
 
+  //Get All categories list
+  GetCategoryList(){
+    return this.http.get(this.url + "/api/Categories/GetCategories");
+  }
+
+  //Add products ---Admin
+  AddProducts(data:any){
+    return this.http.post(this.url + "/api/Products/AddProducts",data);
+  }
+
   isLoggedIn(){
 
     var sessionData = sessionStorage.getItem('token');
@@ -126,7 +136,7 @@ login(data:any){
   //For logout user
   logout(){
     sessionStorage.clear()
-    this.router.navigate(['/login']);
+    this.router.navigate(['login']);
   }
 
 }

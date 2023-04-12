@@ -17,7 +17,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { AdminComponent } from './log-components/admin/admin.component';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -41,6 +41,7 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     IvyCarouselModule,
     MatTableModule,
+    MatSelectModule,
     ToastrModule.forRoot({
       timeOut:1000,
     })
