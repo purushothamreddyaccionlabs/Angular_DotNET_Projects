@@ -25,7 +25,7 @@ builder.Services.AddCors(opt =>
 {
     opt.AddPolicy(name: "CorsPolicy", builder =>
     {
-        builder.WithOrigins("https://dev-angular-app.azurewebsites.net")
+        builder.WithOrigins("https://frontend-eshopcommerce.azurewebsites.net")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
     });
