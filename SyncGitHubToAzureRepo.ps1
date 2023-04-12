@@ -14,7 +14,7 @@ Remove-Item -Recurse -Force .git
 cd ..
 
 # Clone the repository again, this time with Azure credentials
-$GIT_CMD_REPOSITORY="https://$AZUREPAT@dev.azure.com/Learning-Devops-7777/Abdul/_git/syncgitEshopCommerce"
+$GIT_CMD_REPOSITORY="https://$AZUREPAT@dev.azure.com/ravid1997/Abdul/_git/syncgitEshopCommerce"
 git clone $GIT_CMD_REPOSITORY
 
 $folder1 = "D:\a\Angular_DotNET_Projects\Angular_DotNET_Projects\Angular_DotNET_Projects"
