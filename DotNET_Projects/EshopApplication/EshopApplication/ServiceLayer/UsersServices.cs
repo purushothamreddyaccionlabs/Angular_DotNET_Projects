@@ -23,10 +23,9 @@ namespace EshopApplication.ServiceLayer
 
         public List<Users> GetUsersList()
         {
-            var userList = _db.Users.FromSqlRaw("SELECT * FROM Users");
 
-            /*return _db.Users.ToList();*/
-            return userList.ToList();
+            return _db.Users.ToList();
+
         }
         public Users RegisterUser(Users userData)
         {
