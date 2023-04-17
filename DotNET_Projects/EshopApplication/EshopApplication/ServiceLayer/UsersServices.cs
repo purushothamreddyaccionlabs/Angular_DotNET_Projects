@@ -74,6 +74,7 @@ namespace EshopApplication.ServiceLayer
             return userData;
         }
 
+        //User Validation
         public Users ValidateUser(LoginUser userData)
         {
        
