@@ -15,4 +15,6 @@ export class SearchComponent {
       console.log(par);
     })
   }
+
+  isDirty = true;
 }
