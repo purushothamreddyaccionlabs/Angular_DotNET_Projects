@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,15 +7,39 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
-export class SearchComponent {
+export class SearchComponent implements OnInit{
 
+  firstname:string = '';
+  terms:boolean = false;
+  customerType:string ='';
+  description:string = '';
   constructor(
     private ativatedRoute:ActivatedRoute
-  ){
-    this.ativatedRoute.queryParams.subscribe(par=>{
-      console.log(par);
-    })
+  ){ }
+  ngOnInit() {
+    
   }
 
-  isDirty = true;
+  
+
+  submitform(formValue:NgForm){
+    console.log(formValue.value);
+  }
+
+  resetForm(custForm:NgForm){
+    //custForm.reset();
+    custForm.resetForm();
+  }
+  setvaluesByTemform(formsData:NgForm){
+
+    let formdata = {
+      firstname:'Ram charan Reddy Angullu',
+      terms:true,
+      customerType:'2',
+      description:'This is set by value method'
+    }
+
+    formsData.setValue(formdata);
+  }
+ 
 }

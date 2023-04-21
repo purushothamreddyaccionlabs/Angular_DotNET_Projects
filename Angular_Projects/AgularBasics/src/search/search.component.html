@@ -1,2 +1,21 @@
-<p>search works!</p>
-<a routerLink="/products">products</a>
+
+<!-- <a routerLink="/products">products</a> -->
+<div class="p-5">
+<form #CusomerForm="ngForm" (submit)="submitform(CusomerForm)">
+    <input type="text" [(ngModel)]="firstname" name="firstname" required minlength="10"/>
+    <br/>
+    <input type="checkbox" [(ngModel)]="terms" name="terms" required/> Accept Terms & conditions
+    <br/>
+    <select [(ngModel)]="customerType" name="customerType" required>
+        <option value="1">Standard</option>
+        <option value="2">Premium</option>
+    </select>
+    <br/>
+    <textarea [(ngModel)]="description" name="description" required></textarea>
+        <br/>
+    <button type="submit" [disabled]="!CusomerForm.valid">Click To Submit</button>
+    <button (click)="resetForm(CusomerForm)">Reset</button>
+    <button (click)="setvaluesByTemform(CusomerForm)">Set Form Values</button>
+</form>
+{{firstname}}
+</div>

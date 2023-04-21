@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from '../products/products.component';
 import { ClientListComponent } from '../client-list/client-list.component';
 import { SearchComponent } from '../search/search.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,8 @@ import { SearchComponent } from '../search/search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
   ],
