@@ -2,19 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsComponent } from '../products/products.component';
-import { ClientListComponent } from '../client-list/client-list.component';
-import { SearchComponent } from '../search/search.component';
+
 import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductsComponent,
-    ClientListComponent,
-    SearchComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
