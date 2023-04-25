@@ -31,7 +31,7 @@ productInfo = this.data; //userdata like id firstname
 
     ngOnInit(){
       const sessionData = sessionStorage.getItem('token');
-      this.userdata = JSON.parse(sessionData|| '{}');   
+      this.userdata = JSON.parse(sessionData|| '');   
     }
 
     
