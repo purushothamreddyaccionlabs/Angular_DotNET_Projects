@@ -49,13 +49,11 @@ onSubmitRegForm(){
       type:this.registerForm.get('type').value
     }
     this.apiservice.registerdata(data).subscribe((res)=>{
-     
       this.toaster.success("Register successfully");
       console.log(res);
       this.router.navigate(['login']);
     },
     (Error)=>{
-      
       this.toaster.error("Email address already exist");
       console.log(Error)
     })
