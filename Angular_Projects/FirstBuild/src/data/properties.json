@@ -1,38 +1,57 @@
 [
   {
     "id": 1,
+    "SellRent":1,
     "Name": "Birla House",
     "Type": "House",
-    "Price": 12000
+    "Price": 12000,
+    "Image":"House1.jpg"
   },
   {
     "id": 2,
+    "SellRent":2,
     "Name": "ABX Villa",
     "Type": "Villa",
-    "Price": 19000
+    "Price": 19000,
+    "Image":"House2.jpg"
   },
   {
     "id": 3,
+    "SellRent":2,
     "Name": "ITX House",
     "Type": "House",
-    "Price": 18000
+    "Price": 18000,
+    "Image":"House3.jpg"
   },
   {
     "id": 4,
+    "SellRent":1,
     "Name": "NK Villa",
     "Type": "House",
-    "Price": 3267
+    "Price": 3267,
+    "Image":"Hosue4.jpg"
   },
   {
     "id": 5,
+    "SellRent":1,
     "Name": "PR House",
     "Type": "House",
-    "Price": 65000
+    "Price": 65000,
+    "Image":"House5.jpg"
   },
   {
     "id": 6,
+    "SellRent":1,
     "Name": "JC House",
     "Type": "House",
-    "Price": 25000
+    "Price": 25000,
+    "Image":"House6.jpg"
+  },
+  {
+    "id": 7,
+    "SellRent":1,
+    "Name": "Jk Villa",
+    "Type": "Villa",
+    "Price": 85000
   }
 ]

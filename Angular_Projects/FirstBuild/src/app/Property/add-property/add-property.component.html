@@ -1,3 +1,23 @@
-<p>add-property works!
-  <button class="btn btn-primary" (click)="onBack()">Back</button>
-</p>
+<div class="card">
+  <div class="card-header">Add New Property</div>
+  <div class="card-body">
+    <form>
+      <div class="form-group col-12">
+        <label for="name" class="mb-1">Name</label>
+        <input type="text" class="form-control"/>
+      </div>
+      <div class="form-group col-12">
+        <label for="type" class="mb-1 mt-2">Type</label>
+        <input type="text" class="form-control"/>
+      </div>
+      <div class="form-group col-12">
+        <label for="Price" class="mb-1 mt-2">Price</label>
+        <input type="text" class="form-control"/>
+      </div>
+      <div class="form-group col-12">
+        <button type="submit" class="btn btn-primary save-button">Save</button>
+        <button type="reset" class="btn btn-primary cancel-button">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
