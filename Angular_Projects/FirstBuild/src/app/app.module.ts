@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { PropertyListComponent } from './Property/property-list/property-list.component';
 import { PropertyCardComponent } from './Property/property-card/property-card.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HousingService } from './services/housing.service';
 import { AddPropertyComponent } from './Property/add-property/add-property.component';
 import { PropertyDetailComponent } from './Property/property-detail/property-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserRegisterComponent } from './user/user-register/user-register.component';
+import { UserServiceService } from './services/user-service.service';
 
 @NgModule({
   declarations: [
@@ -19,15 +22,18 @@ import { FormsModule } from '@angular/forms';
     PropertyCardComponent,
     NavBarComponent,
     AddPropertyComponent,
-    PropertyDetailComponent
+    PropertyDetailComponent,
+    UserLoginComponent,
+    UserRegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [HousingService],
+  providers: [HousingService,UserServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
