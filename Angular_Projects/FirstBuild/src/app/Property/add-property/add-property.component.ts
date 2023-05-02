@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,9 +9,15 @@ import { Router } from '@angular/router';
 })
 export class AddPropertyComponent {
 
+  // @ViewChild('From') addPropertyForm:NgForm;
+
   constructor(private router: Router) { }
   onBack() {
     this.router.navigate(['/']);
   }
 
+  onSubmit(Form:NgForm){
+    console.log("success");
+    console.log(Form);
+  }
 }
