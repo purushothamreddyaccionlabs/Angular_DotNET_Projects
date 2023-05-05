@@ -21,6 +21,7 @@ import { UserServiceService } from './services/user-service.service';
 import { AlertifyService } from './services/alertify.service';
 import { AuthService } from './services/auth.service';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { PropertyDetailResolverService } from './Property/property-detail/property-detail-resolver.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,13 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     ButtonsModule.forRoot(),
     BsDatepickerModule.forRoot()
   ],
-  providers: [HousingService,UserServiceService,AlertifyService,AuthService],
+  providers: [
+    HousingService,
+    UserServiceService,
+    AlertifyService,
+    AuthService,
+    PropertyDetailResolverService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
