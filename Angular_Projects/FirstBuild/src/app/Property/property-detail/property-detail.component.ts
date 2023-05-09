@@ -49,52 +49,37 @@ export class PropertyDetailComponent implements OnInit {
 
     this.galleryOptions = [
       {
-        width: '600px',
-        height: '400px',
+        width: '100%',
+        height: '465px',
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Slide
-      },
-      // max-width 800
-      {
-        breakpoint: 800,
-        width: '100%',
-        height: '600px',
-        imagePercent: 80,
-        thumbnailsPercent: 20,
-        thumbnailsMargin: 20,
-        thumbnailMargin: 20
-      },
-      // max-width 400
-      {
-        breakpoint: 400,
-        preview: false
       }
     ];
 
     this.galleryImages = [
       {
-        small: 'assets/img/gallery/1-small.jpeg',
-        medium: 'assets/img/gallery/1-medium.jpeg',
-        big: 'assets/img/gallery/1-big.jpeg'
+        small: 'assets/images/interiorImg1.jpg',
+        medium: 'assets/images/interiorImg1.jpg',
+        big: 'assets/images/interiorImg1.jpg'
       },
       {
-        small: 'assets/img/gallery/2-small.jpeg',
-        medium: 'assets/img/gallery/2-medium.jpeg',
-        big: 'assets/img/gallery/2-big.jpeg'
+        small: 'assets/images/interiorImg2.jpg',
+        medium: 'assets/images/interiorImg2.jpg',
+        big: 'assets/images/interiorImg2.jpg'
       },
       {
-        small: 'assets/img/gallery/3-small.jpeg',
-        medium: 'assets/img/gallery/3-medium.jpeg',
-        big: 'assets/img/gallery/3-big.jpeg'
+        small: 'assets/images/interiorImg3.jpg',
+        medium: 'assets/images/interiorImg3.jpg',
+        big: 'assets/images/interiorImg3.jpg'
       },{
-        small: 'assets/img/gallery/4-small.jpeg',
-        medium: 'assets/img/gallery/4-medium.jpeg',
-        big: 'assets/img/gallery/4-big.jpeg'
+        small: 'assets/images/interiorImg4.jpg',
+        medium: 'assets/images/interiorImg4.jpg',
+        big: 'assets/images/interiorImg4.jpg'
       },
       {
-        small: 'assets/img/gallery/5-small.jpeg',
-        medium: 'assets/img/gallery/5-medium.jpeg',
-        big: 'assets/img/gallery/5-big.jpeg'
+        small: 'assets/images/interiorImg5.jpg',
+        medium: 'assets/images/interiorImg5.jpg',
+        big: 'assets/images/interiorImg5.jpg'
       }
     ];
   }

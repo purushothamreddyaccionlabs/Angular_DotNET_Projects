@@ -22,7 +22,6 @@ export class HousingService {
   getProperty(id:number){
     return this.getAllProperties().pipe(
       map(propertiesArray=>{
-        //throw new Error('Some error');
         return propertiesArray.find(p=> p.Id === id);
       })
     );
@@ -32,7 +31,9 @@ export class HousingService {
     return this.http.get<PropertyData>('data/properties.json').pipe(
       map(data => {
         const propertiesArray:Array<Property> = [];
-        const localProperties= JSON.parse(localStorage.getItem('newProp') || '');
+        const localProperties= JSON.parse(localStorage.getItem('newProp') ||'');
+
+
 
         if(localProperties){
           for(const id in localProperties){
@@ -46,8 +47,6 @@ export class HousingService {
           }
         }
 
-
-
         for (const id in data) {
           if(SellRent){
           if (data.hasOwnProperty(id) && data[id].SellRent === SellRent) {
@@ -60,7 +59,7 @@ export class HousingService {
         return propertiesArray;
       })
   );
-  return this.http.get<Property[]>('data/properties.json')
+  return this.http.get<Property[]>('data/properties.json');
 }
 
 
