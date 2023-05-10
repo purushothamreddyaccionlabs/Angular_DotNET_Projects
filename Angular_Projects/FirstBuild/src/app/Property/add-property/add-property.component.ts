@@ -37,7 +37,7 @@ export class AddPropertyComponent implements OnInit {
     City: '',
     RTM: 0
   };
-  ;
+  cityList!:any[];
 
   constructor(
     private fb: FormBuilder,
@@ -48,6 +48,10 @@ export class AddPropertyComponent implements OnInit {
 
   ngOnInit() {
     this.CreateAddPropertyForm();
+    this.housingService.getListOfCities().subscribe(data=>{
+      console.log(data);
+      this.cityList = data;
+    })
   }
 
   CreateAddPropertyForm() {

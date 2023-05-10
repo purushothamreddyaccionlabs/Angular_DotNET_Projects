@@ -87,7 +87,10 @@
 
                 <div class="form-group col-12">
                   <label for="Price" class="mb-1 mt-2">City</label>
-                  <input type="text" class="form-control" [(ngModel)]="propertyView.City" formControlName="City"/>
+                  <select class="form-control" [(ngModel)]="propertyView.City" formControlName="City">
+                    <option value=''>--select city--</option>
+                    <option *ngFor="let city of cityList" value={{city.id}}>{{city.name}}</option>
+                  </select>
                   <div class="error-block" *ngIf="City.invalid && (nextClicked || City.touched)">
                     Please select city
                   </div>

@@ -10,7 +10,7 @@ import { AlertifyService } from 'src/app/services/alertify.service';
 })
 export class UserRegisterComponent implements OnInit {
 
-  registrationForm!: FormGroup;
+  registrationForm!:FormGroup;
   user!: User;
   userSubmitted!:boolean;
 
@@ -29,7 +29,6 @@ export class UserRegisterComponent implements OnInit {
       userName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
-      confirmPassword: ['', [Validators.required]],
       mobile: ['', [Validators.required, Validators.maxLength(10)]]
     });
   }

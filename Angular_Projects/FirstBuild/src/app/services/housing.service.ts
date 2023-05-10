@@ -67,5 +67,9 @@ export class HousingService {
     localStorage.setItem('newProp',JSON.stringify(property));
   }
 
+  getListOfCities():Observable<string[]>{
+    return this.http.get<string[]>('http://localhost:5219/api/City');
+  }
+
 
 }

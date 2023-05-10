@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Wio2lOWcvWDV9uerBBJrhYxPdacncg16WN6iCW0QKrk=",
+  "Source": "HSPAWebAPI",
+  "BasePath": "_content/HSPAWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
