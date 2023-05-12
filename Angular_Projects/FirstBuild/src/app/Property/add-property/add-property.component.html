@@ -81,13 +81,14 @@
                     type="text"
                     class="form-control"
                     formControlName="Name"
-                    [(ngModel)]="propertyView.Name"/>
+                    [(ngModel)]="propertyView.Name"
+                    id="name"/>
                   <div class="error-block" *ngIf="Name.invalid && (nextClicked || Name.touched)">Please select building, society or project name</div>
                 </div>
 
                 <div class="form-group col-12">
-                  <label for="Price" class="mb-1 mt-2">City</label>
-                  <select class="form-control" [(ngModel)]="propertyView.City" formControlName="City">
+                  <label for="City" class="mb-1 mt-2">City</label>
+                  <select class="form-control" [(ngModel)]="propertyView.City" formControlName="City" id="City">
                     <option value=''>--select city--</option>
                     <option *ngFor="let city of cityList" value={{city.id}}>{{city.name}}</option>
                   </select>

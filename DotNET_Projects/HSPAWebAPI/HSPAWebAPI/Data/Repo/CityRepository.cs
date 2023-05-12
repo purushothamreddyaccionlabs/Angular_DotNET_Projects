@@ -22,6 +22,11 @@ namespace HSPAWebAPI.Data.Repo
             db.Cities.Remove(city);
         }
 
+        public async Task<City> FindCity(int id)
+        {
+            return await db.Cities.FindAsync(id);
+        }
+
         public async Task<IEnumerable<City>> GetCitiesAsync()
         {
             return await db.Cities.ToListAsync();
