@@ -2,15 +2,15 @@
 using HSPAWebAPI.Dtos;
 using HSPAWebAPI.Interfaces;
 using HSPAWebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace HSPAWebAPI.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class CityController : Controller
+    [Authorize]
+    public class CityController : BaseControlller
     {
         private readonly IUnitOfWork uow;
         private readonly IMapper mapper;
@@ -22,6 +22,7 @@ namespace HSPAWebAPI.Controllers
 
         //GET api/city
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetCities()
         {
             var cities = await uow.CityRepository.GetCitiesAsync();

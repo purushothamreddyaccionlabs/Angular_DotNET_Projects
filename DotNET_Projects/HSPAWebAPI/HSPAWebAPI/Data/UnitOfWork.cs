@@ -12,6 +12,8 @@ namespace HSPAWebAPI.Data
         }
         public ICityRepository CityRepository => new CityRepository(db);
 
+        public IUserRepository UserRepository => new UserRepository(db);
+
         public async Task<bool> SaveAsync()
         {
             return await db.SaveChangesAsync() > 0;
