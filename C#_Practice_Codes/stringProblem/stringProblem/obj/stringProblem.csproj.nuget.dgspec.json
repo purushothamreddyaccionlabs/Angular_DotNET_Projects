@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\git\\stringProblem\\stringProblem\\stringProblem.csproj": {}
+    "D:\\Projects_DotNet_Angular\\C#_Practice_Codes\\stringProblem\\stringProblem\\stringProblem.csproj": {}
   },
   "projects": {
-    "D:\\git\\stringProblem\\stringProblem\\stringProblem.csproj": {
+    "D:\\Projects_DotNet_Angular\\C#_Practice_Codes\\stringProblem\\stringProblem\\stringProblem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\stringProblem\\stringProblem\\stringProblem.csproj",
+        "projectUniqueName": "D:\\Projects_DotNet_Angular\\C#_Practice_Codes\\stringProblem\\stringProblem\\stringProblem.csproj",
         "projectName": "stringProblem",
-        "projectPath": "D:\\git\\stringProblem\\stringProblem\\stringProblem.csproj",
+        "projectPath": "D:\\Projects_DotNet_Angular\\C#_Practice_Codes\\stringProblem\\stringProblem\\stringProblem.csproj",
         "packagesPath": "C:\\Users\\AL5402\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\stringProblem\\stringProblem\\obj\\",
+        "outputPath": "D:\\Projects_DotNet_Angular\\C#_Practice_Codes\\stringProblem\\stringProblem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AL5402\\AppData\\Roaming\\NuGet\\NuGet.Config",
