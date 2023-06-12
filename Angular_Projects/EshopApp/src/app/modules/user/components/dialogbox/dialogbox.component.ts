@@ -1,5 +1,4 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ApiServicesService } from 'src/app/service-API/api-services.service';
 import { ToastrService } from 'ngx-toastr';
@@ -13,12 +12,11 @@ import { Router } from '@angular/router';
 })
 export class DialogboxComponent implements OnInit{
 
-cartSize = 1; 
+cartSize = 1;
 userdata:any;
 count = 3;
 CartProducts:any;
 productInfo = this.data; //userdata like id firstname
-
 
   constructor(
     public dialogRef:MatDialogRef<DialogboxComponent>,
@@ -31,21 +29,14 @@ productInfo = this.data; //userdata like id firstname
 
     ngOnInit(){
       const sessionData = sessionStorage.getItem('token');
-      this.userdata = JSON.parse(sessionData|| '');   
+      this.userdata = JSON.parse(sessionData|| '');
     }
 
-    
-  
-    
-  
-   
     //close dash board and open cart
     backtohome(){
       this.dialogRef.close();
       this.router.navigate(['./user/cart'])
     }
-
-    
 
     addProductsToCart(){
       var data = {
@@ -59,19 +50,18 @@ productInfo = this.data; //userdata like id firstname
         this.ForUpdateCartIconcount();
         this.toaster.success("Item added to your cart");
       })
-       
     }
 
     ForUpdateCartIconcount(){
       this.serviceapi.getCartItemsbyuserId(this.userdata.id).subscribe((response)=>{
         this.CartProducts = response;
         this.updateCount(this.CartProducts.length);
-      })  
+      })
     }
 
     updateCount(count:number) {
       this.serviceapi.updateCount(count);
     }
 
-    
+
 }

@@ -16,8 +16,6 @@ export class LoginComponent implements OnInit{
   loginform:any = FormGroup;
   invalidUser = true;
   invalidform = false;
-  
-
 
 
   //constructor
@@ -54,7 +52,7 @@ export class LoginComponent implements OnInit{
       }
      this.apiservices.login(data);
     //  this.invalidUser = this.checkValidUser();
-     
+
     }else{
       this.invalidform = true;
       this.toastr.error("Invalid User datails");
