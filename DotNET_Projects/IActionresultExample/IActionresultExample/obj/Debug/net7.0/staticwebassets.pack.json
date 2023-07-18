@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\IActionresultExample\\IActionresultExample\\wwwroot\\FamilyEcards.pdf",
+      "PackagePath": "staticwebassets\\FamilyEcards.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.IActionresultExample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.IActionresultExample.props",
+      "PackagePath": "build\\IActionresultExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.IActionresultExample.props",
+      "PackagePath": "buildMultiTargeting\\IActionresultExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.IActionresultExample.props",
+      "PackagePath": "buildTransitive\\IActionresultExample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

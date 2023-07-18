@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Stocksapp_HttpClient_ex.props" />
+</Project>

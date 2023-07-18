@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "G+yqozm4DuzVbh+bDB2z5w6KDnZR1J1OuzTCuHdCP5Y=",
+  "Source": "DIExample",
+  "BasePath": "_content/DIExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DIExample\\wwwroot",
+      "Source": "DIExample",
+      "ContentRoot": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\DIExample\\DIExample\\wwwroot\\",
+      "BasePath": "_content/DIExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "3UXU1fBPaoH9/X9R7Hnaby58rtMZfZIXEY3ne8z9Lxg=",
+  "Source": "IActionresultExample",
+  "BasePath": "_content/IActionresultExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "IActionresultExample\\wwwroot",
+      "Source": "IActionresultExample",
+      "ContentRoot": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\IActionresultExample\\IActionresultExample\\wwwroot\\",
+      "BasePath": "_content/IActionresultExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\IActionresultExample\\IActionresultExample\\wwwroot\\FamilyEcards.pdf",
+      "SourceId": "IActionresultExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\IActionresultExample\\IActionresultExample\\wwwroot\\",
+      "BasePath": "_content/IActionresultExample",
+      "RelativePath": "FamilyEcards.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FamilyEcards.pdf"
+    }
+  ]
+}

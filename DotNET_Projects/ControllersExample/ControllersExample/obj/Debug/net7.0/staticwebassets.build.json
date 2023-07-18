@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "VvYpZr7O+5GfTs4CbLaZinNW8ZRU8Wb08A9M68RFvHw=",
+  "Source": "ControllersExample",
+  "BasePath": "_content/ControllersExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ControllersExample\\wwwroot",
+      "Source": "ControllersExample",
+      "ContentRoot": "D:\\Projects_DotNet_Angular\\DotNET_Projects\\ControllersExample\\ControllersExample\\wwwroot\\",
+      "BasePath": "_content/ControllersExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
